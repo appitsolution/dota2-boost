@@ -1,0 +1,33 @@
+<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_278_1347)">
+<circle cx="16" cy="16" r="16" fill="#F2F0F2"/>
+<mask id="mask0_278_1347" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="32" height="32">
+<circle cx="16" cy="16" r="16" fill="#FCFCFC"/>
+</mask>
+<g mask="url(#mask0_278_1347)">
+<rect x="5.19995" y="28.4" width="22" height="4" fill="#D90026"/>
+<rect x="5.19995" y="28.4" width="22" height="4" fill="#D90026"/>
+<rect x="0.399963" y="20.4" width="31.6" height="4" fill="#D90026"/>
+<rect x="0.399963" y="20.4" width="31.6" height="4" fill="#D90026"/>
+<rect x="0.399963" y="12" width="31.6" height="4" fill="#D90026"/>
+<rect x="0.399963" y="12" width="31.6" height="4" fill="#D90026"/>
+<rect x="0.399963" y="4" width="31.6" height="4" fill="#D90026"/>
+<rect x="0.399963" y="4" width="31.6" height="4" fill="#D90026"/>
+<rect width="16.4" height="16" fill="#0052B5"/>
+<path d="M13.2 13.4L12 14L12.4 12.8L11.6 12H12.8L13.2 10.8L13.8 12H14.8L14 12.8L14.4 14L13.2 13.4Z" fill="#EFEFEF"/>
+<path d="M7.6 13.4L6.4 14L6.8 12.8L6 12H7.2L7.6 10.8L8.2 12H9.2L8.4 12.8L8.8 14L7.6 13.4Z" fill="#EFEFEF"/>
+<path d="M1.99996 13.4L0.799963 14L1.19996 12.8L0.399963 12H1.59996L1.99996 10.8L2.59996 12H3.59996L2.79996 12.8L3.19996 14L1.99996 13.4Z" fill="#EFEFEF"/>
+<path d="M13.2 8.99999L12 9.59999L12.4 8.39999L11.6 7.59999H12.8L13.2 6.39999L13.8 7.59999H14.8L14 8.39999L14.4 9.59999L13.2 8.99999Z" fill="#EFEFEF"/>
+<path d="M13.2 4.6L12 5.2L12.4 4L11.6 3.2H12.8L13.2 2L13.8 3.2H14.8L14 4L14.4 5.2L13.2 4.6Z" fill="#EFEFEF"/>
+<path d="M13.2 0.200006L12 0.800006L12.4 -0.399994L11.6 -1.19999H12.8L13.2 -2.39999L13.8 -1.19999H14.8L14 -0.399994L14.4 0.800006L13.2 0.200006Z" fill="#EFEFEF"/>
+<path d="M7.6 4.6L6.4 5.2L6.8 4L6 3.2H7.2L7.6 2L8.2 3.2H9.2L8.4 4L8.8 5.2L7.6 4.6Z" fill="#EFEFEF"/>
+<path d="M7.6 8.99999L6.4 9.59999L6.8 8.39999L6 7.59999H7.2L7.6 6.39999L8.2 7.59999H9.2L8.4 8.39999L8.8 9.59999L7.6 8.99999Z" fill="#EFEFEF"/>
+<path d="M1.99996 8.99999L0.799963 9.59999L1.19996 8.39999L0.399963 7.59999H1.59996L1.99996 6.39999L2.59996 7.59999H3.59996L2.79996 8.39999L3.19996 9.59999L1.99996 8.99999Z" fill="#EFEFEF"/>
+</g>
+</g>
+<defs>
+<clipPath id="clip0_278_1347">
+<rect width="32" height="32" fill="white"/>
+</clipPath>
+</defs>
+</svg>
