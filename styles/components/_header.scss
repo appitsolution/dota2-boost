@@ -1,0 +1,129 @@
+.header-navigation {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 28px 0;
+
+    &__logo {
+        display: flex;
+        align-items: center;
+        gap: 6px;
+
+        &-game {
+            position: relative;
+            &:hover .header-navigation__logo-game-selected {
+                opacity: 1;
+                pointer-events: all;
+            }
+            &:hover .header-navigation__logo-game-react-icon {
+                transform: rotate(180deg);
+            }
+
+            &-react {
+                display: flex;
+                align-items: center;
+                border-radius: 20px;
+                background: #181818;
+                padding: 18px 36px;
+                gap: 10px;
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                font-family: Montserrat;
+                font-weight: 700;
+                cursor: pointer;
+                transition: background 250ms linear;
+
+                &:hover {
+                    background: #3c3c3c;
+                }
+
+                &-icon {
+                    transition: transform 250ms linear;
+                }
+            }
+
+            &-selected {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 250ms linear;
+                padding-top: 5px;
+
+                &.active {
+                    opacity: 1;
+                    pointer-events: all;
+                }
+
+                &-button {
+                    display: flex;
+                    align-items: center;
+                    width: 100%;
+                    border-radius: 20px;
+                    background: #181818;
+                    padding: 18px 36px;
+                    gap: 10px;
+                    color: #fff;
+                    text-align: center;
+                    font-size: 18px;
+                    font-family: Montserrat;
+                    font-weight: 700;
+                    cursor: pointer;
+                    transition: background 250ms linear;
+
+                    &:hover {
+                        background: #3c3c3c;
+                    }
+                }
+            }
+        }
+    }
+
+    &__menu {
+        display: flex;
+        align-items: center;
+
+        &-link {
+            color: #9b9b9b;
+            text-align: center;
+            font-size: 18px;
+            font-family: Gilroy;
+            font-weight: 600;
+            padding: 0 20px;
+            transition: color 250ms linear;
+
+            &:hover {
+                color: #fff;
+            }
+
+            &.current {
+                color: #fff;
+            }
+        }
+    }
+
+    &__profile {
+        &-button {
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background: #181818;
+            padding: 18px 36px;
+            gap: 10px;
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-family: Montserrat;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background 250ms linear;
+
+            &:hover {
+                background: #3c3c3c;
+            }
+        }
+    }
+}

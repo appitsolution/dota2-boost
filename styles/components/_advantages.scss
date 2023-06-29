@@ -1,0 +1,88 @@
+.advantages {
+    padding-top: 120px;
+    overflow: hidden;
+
+    &-title {
+        color: #fff;
+        font-size: 64px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        padding: 0 109px;
+        margin-bottom: 25px;
+
+        &-span {
+            color: rgba(0, 148, 232, 1);
+        }
+    }
+}
+
+.advantages-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 0px 76px;
+    border-radius: 40px;
+    background: #181818;
+
+    &__block {
+        padding: 120px 0;
+        width: 40%;
+        &-item {
+            padding: 75px 0;
+            &:not(:last-child) {
+                border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+            }
+
+            &-title {
+                color: #fff;
+                font-size: 28px;
+                font-family: Reaver;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0.28px;
+                margin-bottom: 25px;
+            }
+
+            &-description {
+                color: #fff;
+                font-size: 20px;
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%;
+                letter-spacing: 0.2px;
+            }
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-sizing: border-box;
+            width: 100%;
+            padding: 27px 36px;
+            border-radius: 20px;
+            background: #0094e8;
+            cursor: pointer;
+
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+
+    &__image {
+        width: 60%;
+
+        &-img {
+            margin-left: -256px;
+        }
+    }
+}

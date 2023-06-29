@@ -1,0 +1,971 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="first-container">
+        <div class="header-block">
+          <nav class="header-navigation">
+            <div class="header-navigation__logo">
+              <a href="/" class="header-navigation__logo-link">
+                <img
+                  class="header-navigation__logo-link-icon"
+                  src="./images/icons/logo.svg"
+                  alt="logo"
+                />
+              </a>
+
+              <div class="header-navigation__logo-game">
+                <button class="header-navigation__logo-game-react">
+                  <img
+                    class="header-navigation__logo-game-react-decor"
+                    src="./images/icons/dota2.svg"
+                    alt="dota2"
+                  />
+                  Dota 2
+                  <img
+                    class="header-navigation__logo-game-react-icon"
+                    src="./images/icons/arrow.svg"
+                    alt="arrow"
+                  />
+                </button>
+
+                <div class="header-navigation__logo-game-selected">
+                  <button class="header-navigation__logo-game-selected-button">
+                    <img
+                      class="header-navigation__logo-game-react-decor"
+                      src="./images/icons/dota2.svg"
+                      alt="dota2"
+                    />
+                    Dota 2
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="header-navigation__menu">
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> DotaBoost </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Послуги </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Про нас </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Робота </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Блог </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> FAQ </a>
+              </li>
+            </ul>
+
+            <div class="header-navigation__profile">
+              <button class="header-navigation__profile-button">
+                <img
+                  class="header-navigation__profile-button-icon"
+                  src="./images/icons/account.svg"
+                  alt="account"
+                />
+                Особистий кабінет
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- !Header -->
+
+    <!-- Calculator -->
+
+    <section class="calculator">
+      <div class="second-container">
+        <div class="calculator-block">
+          <div class="calculator__header">
+            <h1 class="calculator__header-title">
+              Прорахуй ціну
+              <span class="calculator__header-title-span"> твого бусту! </span>
+            </h1>
+            <div class="calculator__header-information">
+              <div class="calculator__header-information-online">
+                <img
+                  class="calculator__header-infomation-online-icon"
+                  src="./images/icons/person.svg"
+                  alt="person"
+                />
+                42 Бустера Онлайн
+              </div>
+              <div class="calculator__header-information-security">
+                <img
+                  class="calculator__header-infomation-security-icon"
+                  src="./images/icons/lock.svg"
+                  alt="security"
+                />
+                100% Гарантія Конфіденційності
+              </div>
+            </div>
+          </div>
+
+          <div class="calculator__interface">
+            <div class="calculator__interface-advanced">
+              <div class="calculator__interface-advanced-scorematch">
+                <p class="calculator__interface-advanced-scorematch-title">
+                  Кількість Матчів
+                </p>
+                <div class="calculator__interface-advanced-scorematch-block">
+                  <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    step="1"
+                    value="7"
+                    class="calculator__interface-advanced-scorematch-input"
+                  />
+                  <p class="calculator__interface-advanced-scorematch-current">
+                    7
+                  </p>
+                </div>
+              </div>
+
+              <div class="calculator__interface-advanced-server">
+                <button class="calculator__interface-advanced-server-button">
+                  <div
+                    class="calculator__interface-advanced-server-button-text"
+                  >
+                    <p class="calculator__interface-advanced-server-title">
+                      Послуга
+                    </p>
+                    Знижений Пріорітет
+                  </div>
+                  <img
+                    class="calculator__interface-advanced-server-button-icon"
+                    src="./images/icons/arrow.svg"
+                  />
+                </button>
+              </div>
+            </div>
+
+            <div class="calculator__interface-categories">
+              <ul class="calculator__interface-categories-select">
+                <li class="calculator__interface-categories-select-item">
+                  <button
+                    class="calculator__interface-categories-select-button"
+                  >
+                    <div
+                      class="calculator__interface-categories-select-button-block"
+                    >
+                      <div
+                        class="calculator__interface-categories-select-button-selected"
+                      >
+                        <img
+                          class="calculator__interface-categories-select-button-selected-icon"
+                          src="./images/icons/checkbox.svg"
+                          alt="checkbox"
+                        />
+                      </div>
+                      <p
+                        class="calculator__interface-categories-select-button-text"
+                      >
+                        Грати з Бустером
+                      </p>
+                    </div>
+                    <p
+                      class="calculator__interface-categories-select-button-percent"
+                    >
+                      +20%
+                    </p>
+                  </button>
+                </li>
+                <li class="calculator__interface-categories-select-item">
+                  <button
+                    class="calculator__interface-categories-select-button"
+                  >
+                    <div
+                      class="calculator__interface-categories-select-button-block"
+                    >
+                      <div
+                        class="calculator__interface-categories-select-button-selected"
+                      >
+                        <img
+                          class="calculator__interface-categories-select-button-selected-icon"
+                          src="./images/icons/checkbox.svg"
+                          alt="checkbox"
+                        />
+                      </div>
+                      <p
+                        class="calculator__interface-categories-select-button-text"
+                      >
+                        Грати з Бустером
+                      </p>
+                    </div>
+                    <p
+                      class="calculator__interface-categories-select-button-percent"
+                    >
+                      +20%
+                    </p>
+                  </button>
+                </li>
+                <li class="calculator__interface-categories-select-item">
+                  <button
+                    class="calculator__interface-categories-select-button"
+                  >
+                    <div
+                      class="calculator__interface-categories-select-button-block"
+                    >
+                      <div
+                        class="calculator__interface-categories-select-button-selected"
+                      >
+                        <img
+                          class="calculator__interface-categories-select-button-selected-icon"
+                          src="./images/icons/checkbox.svg"
+                          alt="checkbox"
+                        />
+                      </div>
+                      <p
+                        class="calculator__interface-categories-select-button-text"
+                      >
+                        Грати з Бустером
+                      </p>
+                    </div>
+                    <p
+                      class="calculator__interface-categories-select-button-percent"
+                    >
+                      +20%
+                    </p>
+                  </button>
+                </li>
+                <li class="calculator__interface-categories-select-item">
+                  <button
+                    class="calculator__interface-categories-select-button"
+                  >
+                    <div
+                      class="calculator__interface-categories-select-button-block"
+                    >
+                      <div
+                        class="calculator__interface-categories-select-button-selected"
+                      >
+                        <img
+                          class="calculator__interface-categories-select-button-selected-icon"
+                          src="./images/icons/checkbox.svg"
+                          alt="checkbox"
+                        />
+                      </div>
+                      <p
+                        class="calculator__interface-categories-select-button-text"
+                      >
+                        Грати з Бустером
+                      </p>
+                    </div>
+                    <p
+                      class="calculator__interface-categories-select-button-percent"
+                    >
+                      +20%
+                    </p>
+                  </button>
+                </li>
+              </ul>
+            </div>
+
+            <div class="calculator__interface-success">
+              <div class="calculator__interface-success-bonus">
+                <input
+                  class="calculator__interface-success-bonus-input"
+                  placeholder="Введіть Промокод"
+                />
+                <button class="calculator__interface-success-bonus-button">
+                  <img
+                    class="calculator__interface-success-bonus-button-icon"
+                    alt="arrow"
+                    src="./images/icons/arrow-black.svg"
+                  />
+                </button>
+              </div>
+              <button class="calculator__interface-success-payment">
+                Всього 1219 ₴
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Calculator -->
+
+    <!-- Clients -->
+
+    <section class="clients">
+      <div class="second-container">
+        <div class="clients-block">
+          <h2 class="clients-title">Наші клієнти в Захваті</h2>
+          <div class="clients-slider">
+            <div class="swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="clients-slider-item">
+                    <div class="clients-slider-item-header">
+                      <h3 class="clients-slider-item-header-title">Буст MMR</h3>
+
+                      <div class="stars-level">
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star.svg"
+                        />
+                      </div>
+                    </div>
+                    <p class="clients-slider-item-description">
+                      Дуже задоволена послугою прокачки MMR у DotaBoost! Завдяки
+                      їхньому професіоналізму та ефективності, мій рейтинг
+                      значно зрос і я досягла нових висот у грі Dota 2.
+                      Рекомендую цей сервіс!
+                    </p>
+
+                    <div class="clients-slider-item-information">
+                      <p class="clients-slider-item-information-number">
+                        №3213211123
+                      </p>
+
+                      <p class="clients-slider-item-information-date">
+                        26.04.2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients-slider-item">
+                    <div class="clients-slider-item-header">
+                      <h3 class="clients-slider-item-header-title">Буст MMR</h3>
+
+                      <div class="stars-level">
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star.svg"
+                        />
+                      </div>
+                    </div>
+                    <p class="clients-slider-item-description">
+                      Дуже задоволена послугою прокачки MMR у DotaBoost! Завдяки
+                      їхньому професіоналізму та ефективності, мій рейтинг
+                      значно зрос і я досягла нових висот у грі Dota 2.
+                      Рекомендую цей сервіс!
+                    </p>
+
+                    <div class="clients-slider-item-information">
+                      <p class="clients-slider-item-information-number">
+                        №3213211123
+                      </p>
+
+                      <p class="clients-slider-item-information-date">
+                        26.04.2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients-slider-item">
+                    <div class="clients-slider-item-header">
+                      <h3 class="clients-slider-item-header-title">Буст MMR</h3>
+
+                      <div class="stars-level">
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star.svg"
+                        />
+                      </div>
+                    </div>
+                    <p class="clients-slider-item-description">
+                      Дуже задоволена послугою прокачки MMR у DotaBoost! Завдяки
+                      їхньому професіоналізму та ефективності, мій рейтинг
+                      значно зрос і я досягла нових висот у грі Dota 2.
+                      Рекомендую цей сервіс!
+                    </p>
+
+                    <div class="clients-slider-item-information">
+                      <p class="clients-slider-item-information-number">
+                        №3213211123
+                      </p>
+
+                      <p class="clients-slider-item-information-date">
+                        26.04.2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="clients-slider-item">
+                    <div class="clients-slider-item-header">
+                      <h3 class="clients-slider-item-header-title">Буст MMR</h3>
+
+                      <div class="stars-level">
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star-active.svg"
+                        />
+                        <img
+                          class="stars-level-icon"
+                          src="./images/icons/star.svg"
+                        />
+                      </div>
+                    </div>
+                    <p class="clients-slider-item-description">
+                      Дуже задоволена послугою прокачки MMR у DotaBoost! Завдяки
+                      їхньому професіоналізму та ефективності, мій рейтинг
+                      значно зрос і я досягла нових висот у грі Dota 2.
+                      Рекомендую цей сервіс!
+                    </p>
+
+                    <div class="clients-slider-item-information">
+                      <p class="clients-slider-item-information-number">
+                        №3213211123
+                      </p>
+
+                      <p class="clients-slider-item-information-date">
+                        26.04.2023
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="clients-testing">
+            <div class="clients-testing__content">
+              <h3 class="clients-testing__content-title">
+                Хочеш перевірити замовлення та відгук ?
+              </h3>
+              <p class="clients-testing__content-desc">
+                Ми надаємо повністю прозору стрічку замовлень, ви можете
+                перевірити будь-яке замовлення маючи його номер. Ви маєте
+                можливість поділиться вашими враженнями від нашого сервісу після
+                завершення виконання замовлення бустером.
+              </p>
+            </div>
+
+            <button class="clients-testing__button">
+              <img
+                class="clients-testing__button-icon"
+                src="./images/icons/accept.svg"
+              />
+              Перевірити Замовлення
+            </button>
+          </div>
+
+          <div class="clients-decor">
+            <img class="clients-decor-img" src="./images/icons/bg_guides.svg" />
+            <div class="clients-decor-blur"></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Clients -->
+
+    <!-- About -->
+
+    <section class="about">
+      <div class="second-container">
+        <div class="about-block">
+          <h2 class="about-title">Про GameBoost</h2>
+
+          <div class="about-content">
+            <div class="about-content__block">
+              <div class="about-content__block-item">
+                <h3 class="about-content__block-item-title">
+                  Професійні бустери:
+                  <span class="about-content__block-item-title-span"
+                    >ефективність від GameBoost</span
+                  >
+                </h3>
+                <p class="about-content__block-item-description">
+                  GameBoost працює з висококваліфікованими та професійними
+                  бустерами. Наші експерти забезпечать найкращі результати
+                  прокачки вашого рейтингу та навичок у грі. Довіртеся
+                  професіоналам та досягніть максимальної ефективності в грі.
+                </p>
+              </div>
+              <div class="about-content__block-item">
+                <h3 class="about-content__block-item-title">
+                  Професійні бустери:
+                  <span class="about-content__block-item-title-span"
+                    >ефективність від GameBoost</span
+                  >
+                </h3>
+                <p class="about-content__block-item-description">
+                  GameBoost працює з висококваліфікованими та професійними
+                  бустерами. Наші експерти забезпечать найкращі результати
+                  прокачки вашого рейтингу та навичок у грі. Довіртеся
+                  професіоналам та досягніть максимальної ефективності в грі.
+                </p>
+              </div>
+              <div class="about-content__block-item">
+                <h3 class="about-content__block-item-title">
+                  Професійні бустери:
+                  <span class="about-content__block-item-title-span"
+                    >ефективність від GameBoost</span
+                  >
+                </h3>
+                <p class="about-content__block-item-description">
+                  GameBoost працює з висококваліфікованими та професійними
+                  бустерами. Наші експерти забезпечать найкращі результати
+                  прокачки вашого рейтингу та навичок у грі. Довіртеся
+                  професіоналам та досягніть максимальної ефективності в грі.
+                </p>
+              </div>
+            </div>
+            <div class="about-content__image">
+              <img
+                class="about-content__image-img"
+                src="./images/bg_about.png"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !About -->
+
+    <!-- Advantages -->
+    <section class="advantages">
+      <div class="second-container">
+        <div class="advantages-block">
+          <h2 class="advantages-title">
+            Піднімай ММР разом
+            <span class="advantages-title-span"> з особистим скілом </span>
+          </h2>
+
+          <div class="advantages-content">
+            <div class="advantages-content__image">
+              <img
+                class="advantages-content__image-img"
+                src="./images/bg_advantages.png"
+              />
+            </div>
+
+            <div class="advantages-content__block">
+              <div class="advantages-content__block-item">
+                <h3 class="advantages-content__block-item-title">
+                  Спільний буст
+                </h3>
+                <p class="advantages-content__block-item-description">
+                  Наші бустери забезпечують швидке та ефективне піднесення
+                  вашого рейтингу в Dota 2, допомагаючи вам досягти високих
+                  результатів.
+                </p>
+              </div>
+              <div class="advantages-content__block-item">
+                <h3 class="advantages-content__block-item-title">
+                  Спільний буст
+                </h3>
+                <p class="advantages-content__block-item-description">
+                  Наші бустери забезпечують швидке та ефективне піднесення
+                  вашого рейтингу в Dota 2, допомагаючи вам досягти високих
+                  результатів.
+                </p>
+              </div>
+              <div class="advantages-content__block-item">
+                <h3 class="advantages-content__block-item-title">
+                  Спільний буст
+                </h3>
+                <p class="advantages-content__block-item-description">
+                  Наші бустери забезпечують швидке та ефективне піднесення
+                  вашого рейтингу в Dota 2, допомагаючи вам досягти високих
+                  результатів.
+                </p>
+              </div>
+
+              <a class="advantages-content__block-button"
+                >Замовити Менторство</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Advantages -->
+
+    <!-- Blog -->
+    <section class="blog">
+      <div class="second-container">
+        <div class="blog-block">
+          <div class="blog-header">
+            <h2 class="blog-header-title">Блог</h2>
+
+            <button class="blog-header-button">
+              <img
+                class="blog-header-button-icon"
+                src="./images/icons/arrow.svg"
+                alt="blog-icon"
+              />
+            </button>
+          </div>
+
+          <ul class="blog-list">
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+            <li class="blog-item">
+              <a class="blog-link">
+                <div class="blog-link-block">
+                  <div class="blog-link-info">
+                    <p class="blog-link-date">24 червня 2023р.</p>
+                    <p class="blog-link-title">
+                      Оголошено нового героя в Dota 2!
+                    </p>
+                  </div>
+
+                  <div class="blog-link-hidden">
+                    <div class="blog-link-hidden-line"></div>
+                    <p class="blog-link-hidden-text">
+                      Незабаром відбудеться десята річниця повноцінного виходу
+                      Dota 2 (так, ми працюємо над цікавинками до цієї події;
+                      ні, ми точно не встигнемо до вказаної в Steam дати 9
+                      липня).
+                    </p>
+                  </div>
+                </div>
+
+                <img class="blog-link-img" src="./images/blog/blog-1.png" />
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- !Blog -->
+
+    <!-- Faq -->
+    <section class="faq">
+      <div class="second-container">
+        <div class="faq-block">
+          <h2 class="faq-title">FAQ</h2>
+
+          <div class="faq-list">
+            <div class="faq-item">
+              <button class="faq-item-button">
+                Як довго займає процес бусту мого аккаунту?
+                <img
+                  class="faq-item-button-icon"
+                  alt="faq-item-icon"
+                  src="./images/icons/arrow.svg"
+                />
+              </button>
+
+              <div class="faq-item-content">
+                <p class="faq-item-content-text">
+                  Тривалість процесу бусту вашого аккаунту в Dota 2 залежить від
+                  кількості ММР, яку ви бажаєте прокачати. Зазвичай, середня
+                  тривалість бусту складає від кількох днів до кількох тижнів.
+                  Проте, варто зазначити, що точний час може варіюватися в
+                  залежності від наявності доступних бустерів та їх розкладу. Ми
+                  завжди стежимо за тим, щоб забезпечити якісне та оперативне
+                  виконання замовлень наших клієнтів.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item-button">
+                Як довго займає процес бусту мого аккаунту?
+                <img
+                  class="faq-item-button-icon"
+                  alt="faq-item-icon"
+                  src="./images/icons/arrow.svg"
+                />
+              </button>
+
+              <div class="faq-item-content">
+                <p class="faq-item-content-text">
+                  Тривалість процесу бусту вашого аккаунту в Dota 2 залежить від
+                  кількості ММР, яку ви бажаєте прокачати. Зазвичай, середня
+                  тривалість бусту складає від кількох днів до кількох тижнів.
+                  Проте, варто зазначити, що точний час може варіюватися в
+                  залежності від наявності доступних бустерів та їх розкладу. Ми
+                  завжди стежимо за тим, щоб забезпечити якісне та оперативне
+                  виконання замовлень наших клієнтів.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item-button">
+                Як довго займає процес бусту мого аккаунту?
+                <img
+                  class="faq-item-button-icon"
+                  alt="faq-item-icon"
+                  src="./images/icons/arrow.svg"
+                />
+              </button>
+
+              <div class="faq-item-content">
+                <p class="faq-item-content-text">
+                  Тривалість процесу бусту вашого аккаунту в Dota 2 залежить від
+                  кількості ММР, яку ви бажаєте прокачати. Зазвичай, середня
+                  тривалість бусту складає від кількох днів до кількох тижнів.
+                  Проте, варто зазначити, що точний час може варіюватися в
+                  залежності від наявності доступних бустерів та їх розкладу. Ми
+                  завжди стежимо за тим, щоб забезпечити якісне та оперативне
+                  виконання замовлень наших клієнтів.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item-button">
+                Як довго займає процес бусту мого аккаунту?
+                <img
+                  class="faq-item-button-icon"
+                  alt="faq-item-icon"
+                  src="./images/icons/arrow.svg"
+                />
+              </button>
+
+              <div class="faq-item-content">
+                <p class="faq-item-content-text">
+                  Тривалість процесу бусту вашого аккаунту в Dota 2 залежить від
+                  кількості ММР, яку ви бажаєте прокачати. Зазвичай, середня
+                  тривалість бусту складає від кількох днів до кількох тижнів.
+                  Проте, варто зазначити, що точний час може варіюватися в
+                  залежності від наявності доступних бустерів та їх розкладу. Ми
+                  завжди стежимо за тим, щоб забезпечити якісне та оперативне
+                  виконання замовлень наших клієнтів.
+                </p>
+              </div>
+            </div>
+            <div class="faq-item">
+              <button class="faq-item-button">
+                Як довго займає процес бусту мого аккаунту?
+                <img
+                  class="faq-item-button-icon"
+                  alt="faq-item-icon"
+                  src="./images/icons/arrow.svg"
+                />
+              </button>
+
+              <div class="faq-item-content">
+                <p class="faq-item-content-text">
+                  Тривалість процесу бусту вашого аккаунту в Dota 2 залежить від
+                  кількості ММР, яку ви бажаєте прокачати. Зазвичай, середня
+                  тривалість бусту складає від кількох днів до кількох тижнів.
+                  Проте, варто зазначити, що точний час може варіюватися в
+                  залежності від наявності доступних бустерів та їх розкладу. Ми
+                  завжди стежимо за тим, щоб забезпечити якісне та оперативне
+                  виконання замовлень наших клієнтів.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Faq -->
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="second-container">
+        <div class="footer-block"></div>
+      </div>
+    </footer>
+
+    <!-- !Footer -->
+
+    <!-- SCRIPTS -->
+    <script src="./js/calculator.js"></script>
+
+    <script src="./js/clients.js"></script>
+    <script src="./js/faq.js"></script>
+  </body>
+</html>

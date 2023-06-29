@@ -1,0 +1,50 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    background-color: #000000;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+span {
+    padding: 0;
+    margin: 0;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+a,
+button {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    background: none;
+    border: none;
+}
+
+input {
+    appearance: none;
+    border: none;
+    background: none;
+    &:focus {
+        outline: none;
+    }
+}

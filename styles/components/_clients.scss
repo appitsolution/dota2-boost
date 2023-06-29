@@ -1,0 +1,164 @@
+.clients {
+    padding-top: 120px;
+
+    &-block {
+        position: relative;
+    }
+
+    &-decor {
+        position: absolute;
+        top: 80%;
+        left: -18%;
+        z-index: -1;
+
+        &-blur {
+            top: 50%;
+            left: 50%;
+            width: 606px;
+            height: 606px;
+            position: absolute;
+            border-radius: 606px;
+            background: #f1df5c;
+            filter: blur(400px);
+            transform: translate(-50%, -50%);
+        }
+    }
+
+    &-title {
+        color: #fff;
+        font-size: 64px;
+        font-family: Gilroy;
+        font-style: normal;
+        font-weight: 700;
+        line-height: 100%;
+        padding: 0 109px;
+        margin-bottom: 25px;
+    }
+
+    &-slider {
+        border-radius: 40px 40px 0px 0px;
+        background: #101010;
+        padding: 32px 48px;
+        .swiper-slide {
+            max-width: 450px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+
+            border-radius: 20px;
+            background: #181818;
+            padding: 32px;
+            // max-width: 450px;
+
+            &-header {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &-title {
+                    color: #fff;
+                    text-align: center;
+
+                    /* H4 */
+                    font-size: 28px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%;
+                    letter-spacing: 0.28px;
+                }
+            }
+
+            &-description {
+                color: #fff;
+                font-size: 20px;
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%;
+                letter-spacing: 0.2px;
+            }
+
+            &-information {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+
+                &-number {
+                    color: #fff;
+
+                    font-size: 18px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                &-date {
+                    color: #fff;
+
+                    font-size: 18px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+    }
+
+    &-testing {
+        border-radius: 0px 0px 40px 40px;
+        background: #ffc700;
+        padding: 32px 48px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 50px;
+
+        &__content {
+            &-title {
+                color: #000;
+                font-size: 28px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0.28px;
+                margin-bottom: 10px;
+            }
+
+            &-desc {
+                color: #000;
+                font-size: 14px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &__button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 20px;
+            background: #101010;
+            padding: 20px 36px;
+            max-width: 405px;
+            width: 100%;
+
+            color: #fff;
+            text-align: center;
+            font-size: 18px;
+            font-family: Montserrat;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}
