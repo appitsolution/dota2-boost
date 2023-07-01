@@ -1267,7 +1267,7 @@ input:focus {
 }
 
 .blog-hero-block {
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url(../../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url(../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
   background-repeat: no-repeat;
   width: 100%;
   background-position: center;
