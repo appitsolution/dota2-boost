@@ -7,7 +7,13 @@
     &__logo {
         display: flex;
         align-items: center;
-        gap: 6px;
+        gap: 15px;
+
+        &-link {
+            padding: 10px;
+            border-radius: 20px;
+            background: #181818;
+        }
 
         &-game {
             position: relative;
@@ -94,6 +100,7 @@
             font-weight: 600;
             padding: 0 20px;
             transition: color 250ms linear;
+            cursor: pointer;
 
             &:hover {
                 color: #fff;

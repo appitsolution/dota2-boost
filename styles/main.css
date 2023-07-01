@@ -146,7 +146,12 @@ input:focus {
 .header-navigation__logo {
   display: flex;
   align-items: center;
-  gap: 6px;
+  gap: 15px;
+}
+.header-navigation__logo-link {
+  padding: 10px;
+  border-radius: 20px;
+  background: #181818;
 }
 .header-navigation__logo-game {
   position: relative;
@@ -224,6 +229,7 @@ input:focus {
   font-weight: 600;
   padding: 0 20px;
   transition: color 250ms linear;
+  cursor: pointer;
 }
 .header-navigation__menu-link:hover {
   color: #fff;
@@ -1258,4 +1264,106 @@ input:focus {
   font-weight: 400;
   line-height: normal;
   letter-spacing: -0.42px;
+}
+
+.blog-hero-block {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url(../../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 467px;
+  padding: 96px 0;
+}
+.blog-hero-content {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0;
+}
+.blog-hero-date {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.blog-hero-date-text {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 28px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+}
+.blog-hero-date-decor {
+  padding: 8px 32px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 28px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+}
+.blog-hero-title {
+  color: var(--background-on-container, #fff);
+  font-size: 64px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.64px;
+  margin-top: 18px;
+}
+.blog-hero-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--background-on-container, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.blog-hero-link-icon {
+  transform: rotate(-90deg);
+}
+
+.blog-catalog {
+  padding: 96px 0;
+}
+.blog-catalog__pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+  margin-top: 120px;
+}
+.blog-catalog__pagination-link {
+  color: #969696;
+  font-size: 28px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+  cursor: pointer;
+  transition: color 250ms linear;
+}
+.blog-catalog__pagination-link:hover {
+  color: #fff;
+}
+.blog-catalog__pagination-link.current {
+  color: #fff;
+}
+.blog-catalog__pagination-link-icon {
+  transform: rotate(-90deg);
+  padding: 4px;
+  border-radius: 4px;
+  background: #181818;
 }/*# sourceMappingURL=main.css.map */
