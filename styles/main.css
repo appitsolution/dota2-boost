@@ -237,6 +237,16 @@ input:focus {
 .header-navigation__menu-link.current {
   color: #fff;
 }
+.header-navigation__profile {
+  position: relative;
+  cursor: pointer;
+  max-width: 300px;
+  width: 100%;
+}
+.header-navigation__profile:hover .header-navigation__profile-menu {
+  opacity: 1;
+  pointer-events: all;
+}
 .header-navigation__profile-button {
   display: flex;
   align-items: center;
@@ -254,6 +264,66 @@ input:focus {
 }
 .header-navigation__profile-button:hover {
   background: #3c3c3c;
+}
+.header-navigation__profile-info-block {
+  display: flex;
+  align-items: center;
+  border-radius: 20px;
+  background: #101010;
+}
+.header-navigation__profile-info-image {
+  border-radius: 20px 0px 0px 20px;
+  overflow: hidden;
+}
+.header-navigation__profile-info-name {
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-left: 16px;
+}
+.header-navigation__profile-info-notification {
+  margin-left: auto;
+  padding: 20px;
+  cursor: pointer;
+}
+.header-navigation__profile-menu {
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 250ms linear;
+  background: rgb(16, 16, 16);
+  padding: 8px 0;
+  border-radius: 20px;
+}
+.header-navigation__profile-menu-block {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  padding-top: 10px;
+}
+.header-navigation__profile-menu-button {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 18px 36px;
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Gilroy;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  background: rgb(16, 16, 16);
+  cursor: pointer;
+  transition: background 250ms linear;
+}
+.header-navigation__profile-menu-button:hover {
+  background: rgb(33, 33, 33);
 }
 
 .calculator {
@@ -1366,4 +1436,114 @@ input:focus {
   padding: 4px;
   border-radius: 4px;
   background: #181818;
+}
+
+.article-hero-block {
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%), url(../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
+  background-repeat: no-repeat;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+  height: 467px;
+  padding: 96px 0;
+}
+.article-hero-back {
+  display: flex;
+  justify-content: center;
+}
+.article-hero-back-link {
+  display: flex;
+  align-items: center;
+  padding: 20px 36px;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0.4);
+  color: #fff;
+  text-align: center;
+  font-size: 18px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+.article-hero-back-link-icon {
+  transform: rotate(90deg);
+}
+.article-hero-content {
+  display: flex;
+  flex-direction: column;
+  padding: 96px 0;
+}
+.article-hero-date {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 28px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+  margin-top: 30px;
+}
+.article-hero-title {
+  color: var(--background-on-container, #fff);
+  font-size: 64px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.64px;
+  margin-top: 18px;
+  text-align: center;
+}
+.article-hero-link {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+  color: var(--background-on-container, #fff);
+  text-align: center;
+  font-size: 18px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  margin-top: 30px;
+  cursor: pointer;
+}
+.article-hero-link-icon {
+  transform: rotate(-90deg);
+}
+
+.article-content {
+  padding: 96px 0;
+}
+.article-content-description {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 0 108px;
+}
+.article-content-description-text {
+  color: #fff;
+  font-size: 20px;
+  font-family: Noto Sans;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.2px;
+}
+.article-content-also {
+  margin-top: 96px;
+}
+.article-content-also-title {
+  color: #fff;
+  font-size: 28px;
+  font-family: Reaver;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 100%;
+  letter-spacing: 0.28px;
+  margin-bottom: 32px;
 }/*# sourceMappingURL=main.css.map */

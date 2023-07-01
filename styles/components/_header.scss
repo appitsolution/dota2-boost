@@ -113,6 +113,14 @@
     }
 
     &__profile {
+        position: relative;
+        cursor: pointer;
+
+        &:hover .header-navigation__profile-menu {
+            opacity: 1;
+            pointer-events: all;
+        }
+
         &-button {
             display: flex;
             align-items: center;
@@ -130,6 +138,79 @@
 
             &:hover {
                 background: #3c3c3c;
+            }
+        }
+
+        max-width: 300px;
+        width: 100%;
+        &-info-block {
+            display: flex;
+            align-items: center;
+            border-radius: 20px;
+            background: #101010;
+        }
+
+        &-info {
+            &-image {
+                border-radius: 20px 0px 0px 20px;
+                overflow: hidden;
+            }
+
+            &-name {
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                font-family: Montserrat;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                margin-left: 16px;
+            }
+
+            &-notification {
+                margin-left: auto;
+                padding: 20px;
+                cursor: pointer;
+            }
+        }
+
+        &-menu {
+            opacity: 0;
+            pointer-events: none;
+            transition: opacity 250ms linear;
+            &-block {
+                position: absolute;
+                top: 100%;
+                left: 0;
+                width: 100%;
+                padding-top: 10px;
+            }
+            background: rgba(16, 16, 16, 1);
+            padding: 8px 0;
+            border-radius: 20px;
+
+            &-button {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                padding: 18px 36px;
+
+                color: #fff;
+                text-align: center;
+                font-size: 18px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                background: rgba(16, 16, 16, 1);
+                cursor: pointer;
+                transition: background 250ms linear;
+
+                &:hover {
+                    background: rgb(33, 33, 33);
+                }
             }
         }
     }
