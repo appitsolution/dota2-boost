@@ -116,7 +116,7 @@
         position: relative;
         cursor: pointer;
 
-        &:hover .header-navigation__profile-menu {
+        &:hover .header-navigation__profile-menu-block {
             opacity: 1;
             pointer-events: all;
         }
@@ -143,6 +143,7 @@
 
         max-width: 300px;
         width: 100%;
+
         &-info-block {
             display: flex;
             align-items: center;
@@ -175,15 +176,15 @@
         }
 
         &-menu {
-            opacity: 0;
-            pointer-events: none;
-            transition: opacity 250ms linear;
             &-block {
                 position: absolute;
                 top: 100%;
                 left: 0;
                 width: 100%;
                 padding-top: 10px;
+                opacity: 0;
+                pointer-events: none;
+                transition: opacity 250ms linear;
             }
             background: rgba(16, 16, 16, 1);
             padding: 8px 0;

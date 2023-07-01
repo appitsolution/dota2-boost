@@ -1,0 +1,346 @@
+.cabinet {
+}
+
+.cabinet-back {
+    display: inline-flex;
+    align-items: center;
+    gap: 26px;
+
+    border-radius: 20px;
+    background: #181818;
+
+    padding: 8px 42px 8px 8px;
+
+    color: #fff;
+    font-size: 28px;
+    font-family: Gilroy;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 100%;
+    letter-spacing: 0.28px;
+
+    &-img {
+        transform: rotate(90deg);
+        border-radius: 20px;
+        background: #3c3c3c;
+        padding: 16px;
+    }
+}
+
+.cabinet-control {
+    margin-top: 16px;
+    display: flex;
+    align-items: stretch;
+    justify-content: space-between;
+
+    &__info {
+        display: flex;
+        gap: 36px;
+        border-radius: 20px;
+        // overflow: hidden;
+        background: #181818;
+        width: 45%;
+
+        &-image {
+            border-radius: 20px 0 0 20px;
+            overflow: hidden;
+        }
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            gap: 4px;
+
+            &-name {
+                color: #fff;
+                font-size: 28px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%;
+                letter-spacing: 0.28px;
+            }
+
+            &-email {
+                color: #969696;
+                font-size: 16px;
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+
+            &-id {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                padding: 2px 16px;
+                border-radius: 20px;
+                background: #101010;
+
+                &-text {
+                    color: #969696;
+                    text-align: center;
+                    font-size: 16px;
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -0.56px;
+                }
+            }
+        }
+    }
+
+    &__navigation {
+        display: flex;
+        flex-wrap: wrap;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 50%;
+
+        &-button {
+            width: calc(100% / 3);
+            background: #181818;
+
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+            align-items: center;
+            justify-content: center;
+
+            color: #fff;
+            font-size: 18px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            letter-spacing: -0.18px;
+            cursor: pointer;
+            transition: background 250ms linear;
+
+            &:hover {
+                background: #3c3c3c;
+            }
+
+            &-icon {
+                width: 25px;
+                height: 25px;
+            }
+        }
+    }
+}
+
+.cabinet-information {
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    margin-top: 16px;
+
+    &__history {
+        width: 50%;
+        &-title {
+            color: #fff;
+            font-size: 28px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%;
+            letter-spacing: 0.28px;
+            margin-bottom: 16px;
+            margin-left: 24px;
+        }
+
+        &-list {
+            display: flex;
+            flex-direction: column;
+            gap: 40px;
+        }
+
+        &-item {
+            &.active .cabinet-information__history-show {
+                height: 60px;
+                padding-top: 35px;
+                padding-bottom: 16px;
+            }
+
+            &.active .cabinet-information__history-info-button-icon {
+                transform: rotate(180deg);
+            }
+        }
+
+        &-info {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-radius: 20px;
+            background: #181818;
+            padding: 8px 16px;
+            position: sticky;
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 16px;
+                border-radius: 20px;
+                background: #3c3c3c;
+                cursor: pointer;
+
+                &-icon {
+                    transition: transform 250ms linear;
+                    pointer-events: none;
+                }
+            }
+
+            &-id {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                border-radius: 20px;
+                background: #101010;
+                padding-right: 16px;
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border-radius: 20px;
+                    background: #3c3c3c;
+
+                    padding: 14px 16px;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-transform: uppercase;
+                }
+
+                &-value {
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -0.56px;
+                }
+            }
+
+            &-date {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                border-radius: 20px;
+                background: #101010;
+                padding-right: 16px;
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border-radius: 20px;
+                    background: #3c3c3c;
+
+                    padding: 14px 16px;
+                    color: #fff;
+                    font-size: 18px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                &-value {
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -0.56px;
+                }
+            }
+
+            &-status {
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                border-radius: 20px;
+                background: #005d08; //#8B0000
+                padding-right: 16px;
+                &-text {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+
+                    border-radius: 20px;
+                    background: #24c16c; //#EF1010
+
+                    padding: 14px 16px;
+                    color: #181818;
+                    font-size: 18px;
+                    font-family: Gilroy;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+
+                &-value {
+                    color: #fff;
+                    font-size: 16px;
+                    font-family: Noto Sans;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    letter-spacing: -0.56px;
+                }
+            }
+        }
+
+        &-show {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            padding-top: 0px;
+            padding-bottom: 0;
+            padding-left: 16px;
+            padding-right: 16px;
+            margin: 0 1px;
+            margin-top: -25px;
+            background: #24c16c;
+            border-radius: 0 0 20px 20px;
+            height: 0;
+            overflow: hidden;
+            transition: heigth 250ms linear;
+            transition-property: height, padding-top;
+
+            &-name {
+                color: #181818;
+                font-size: 18px;
+                font-family: Gilroy;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            &-date {
+                color: #181818;
+                font-size: 16px;
+                font-family: Noto Sans;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+        }
+    }
+}
