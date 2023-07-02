@@ -1686,12 +1686,13 @@ input:focus {
 .cabinet-information__order-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 }
 .cabinet-information__order-item.active .cabinet-information__order-show {
   height: 190px;
   padding-top: 35px;
   padding-bottom: 16px;
+  margin-top: -25px;
 }
 .cabinet-information__order-item.active .cabinet-information__order-info-button-icon {
   transform: rotate(180deg);
@@ -1818,7 +1819,7 @@ input:focus {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 1px;
-  margin-top: -25px;
+  margin-top: 0px;
   background: #181818;
   border-radius: 0 0 20px 20px;
   height: 0;
@@ -1947,12 +1948,13 @@ input:focus {
 .cabinet-information__history-list {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  gap: 10px;
 }
 .cabinet-information__history-item.active .cabinet-information__history-show {
   height: 60px;
   padding-top: 35px;
   padding-bottom: 16px;
+  margin-top: -25px;
 }
 .cabinet-information__history-item.active .cabinet-information__history-info-button-icon {
   transform: rotate(180deg);
@@ -2082,7 +2084,7 @@ input:focus {
   padding-left: 16px;
   padding-right: 16px;
   margin: 0 1px;
-  margin-top: -25px;
+  margin-top: 0px;
   background: #24c16c;
   border-radius: 0 0 20px 20px;
   height: 0;
