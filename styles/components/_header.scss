@@ -176,6 +176,10 @@
         }
 
         &-menu {
+            background: rgba(16, 16, 16, 1);
+            padding: 8px 0;
+            border-radius: 20px;
+            overflow: hidden;
             &-block {
                 position: absolute;
                 top: 100%;
@@ -186,12 +190,10 @@
                 pointer-events: none;
                 transition: opacity 250ms linear;
             }
-            background: rgba(16, 16, 16, 1);
-            padding: 8px 0;
-            border-radius: 20px;
 
             &-button {
                 width: 100%;
+                box-sizing: border-box;
                 display: flex;
                 align-items: center;
                 gap: 10px;

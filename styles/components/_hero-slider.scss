@@ -1,0 +1,91 @@
+.hero-slider {
+    display: flex;
+    justify-content: center;
+    // gap: -30px;
+
+    &__button {
+        overflow: hidden;
+        position: relative;
+        border-radius: 50px;
+        width: 15%;
+        transition: width 250ms linear;
+        transition-property: margin, width;
+        height: 600px;
+        margin: 0 -5%;
+
+        &.active {
+            width: 70%;
+        }
+
+        &:first-child {
+            margin-left: 0;
+        }
+
+        &:last-child.active {
+            margin-right: 0;
+            margin-left: -5%;
+        }
+
+        &:nth-child(2).active &-image {
+            top: 50%;
+            left: 60%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(3).active &-image {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        &:nth-child(4).active &-image {
+            top: 50%;
+            left: 44%;
+            transform: translate(-50%, -50%);
+        }
+
+        &-image {
+            position: absolute;
+            pointer-events: none;
+            transition: top 250ms linear;
+            transition-property: top, left;
+        }
+    }
+
+    &__button:nth-child(1) {
+        background: linear-gradient(42deg, #1d7090 0%, #0094e8 100%);
+    }
+    &__button:nth-child(1) &__button-image {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__button:nth-child(2) {
+        background: linear-gradient(158deg, #fe9b40 0%, #9c2f32 100%);
+    }
+    &__button:nth-child(2) &__button-image {
+        top: 70%;
+        left: 150%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__button:nth-child(3) {
+        background: linear-gradient(142deg, #fb9dfe 0%, #532a6c 100%);
+    }
+    &__button:nth-child(3) &__button-image {
+        top: 70%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+
+    &__button:nth-child(4) {
+        background: linear-gradient(135deg, #55a898 0%, #1d3a28 100%);
+    }
+
+    &__button:nth-child(4) &__button-image {
+        top: 90%;
+        left: 0%;
+        transform: translate(-50%, -50%);
+    }
+}
