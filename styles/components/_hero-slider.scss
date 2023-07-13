@@ -1,7 +1,5 @@
 .hero-slider {
     display: flex;
-    justify-content: center;
-    // gap: -30px;
 
     &__button {
         overflow: hidden;
@@ -11,7 +9,7 @@
         transition: width 250ms linear;
         transition-property: margin, width;
         height: 600px;
-        margin: 0 -5%;
+        margin-right: -5%;
 
         &.active {
             width: 70%;
@@ -23,7 +21,6 @@
 
         &:last-child.active {
             margin-right: 0;
-            margin-left: -5%;
         }
 
         &:nth-child(2).active &-image {
