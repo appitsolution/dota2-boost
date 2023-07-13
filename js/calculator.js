@@ -1,3 +1,17 @@
+const isCheckboxClick = ({ target }) => {
+  if (target.nodeName === "BUTTON") {
+    if (target.classList.contains("active")) {
+      target.classList.remove("active");
+    } else {
+      target.classList.add("active");
+    }
+  }
+};
+
+document
+  .querySelector(".calculator__interface-categories-select")
+  .addEventListener("click", isCheckboxClick);
+
 const slider = document.querySelector(
   ".calculator__interface-advanced-scorematch-input"
 );
@@ -22,17 +36,3 @@ slider.addEventListener("input", function () {
     value * 100 +
     "%, #3C3C3C 100%)";
 });
-
-const isCheckboxClick = ({ target }) => {
-  if (target.nodeName === "BUTTON") {
-    if (target.classList.contains("active")) {
-      target.classList.remove("active");
-    } else {
-      target.classList.add("active");
-    }
-  }
-};
-
-document
-  .querySelector(".calculator__interface-categories-select")
-  .addEventListener("click", isCheckboxClick);
