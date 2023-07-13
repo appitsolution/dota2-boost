@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="accept-order">
+      <h2 class="accept-order-title">Підтвердження Замовлення</h2>
+
+      <div class="accept-order-block">
+        <div class="accept-order-products">
+          <ul class="accept-order-products-list">
+            <li class="accept-order-products-item">
+              <p class="accept-order-products-item-title">Буст ММР</p>
+              <p class="accept-order-products-item-price">1599 ₴</p>
+            </li>
+            <li class="accept-order-products-item">
+              <p class="accept-order-products-item-title">Офф Тайм</p>
+              <p class="accept-order-products-item-price">200 ₴</p>
+            </li>
+          </ul>
+
+          <div class="accept-order-products-price">
+            <div class="accept-order-products-price-info">
+              <p class="accept-order-products-price-info-prom">Промокод 20%</p>
+              <p class="accept-order-products-price-info-sum">-280 ₴</p>
+            </div>
+            <p class="accept-order-products-price-sum">Сума 1219 ₴</p>
+          </div>
+        </div>
+
+        <div class="accept-order-wrapper">
+          <form class="accept-order-form">
+            <label class="accept-order-form-email">
+              <p class="accept-order-form-email-label">
+                Ваш Е-Мейл
+                <img
+                  class="accept-order-form-email-label-icon"
+                  src="../images/icons/info.svg"
+                />
+              </p>
+              <div class="accept-order-form-email-label-block">
+                <input
+                  class="accept-order-form-email-label-input"
+                  placeholder="Електронна Пошта"
+                />
+                <img
+                  class="accept-order-form-email-label-accept"
+                  src="../images/icons/check.svg"
+                />
+              </div>
+            </label>
+            <label class="accept-order-form-code">
+              <p class="accept-order-form-code-label">
+                Код Підтвердження
+                <img
+                  class="accept-order-form-code-label-icon"
+                  src="../images/icons/info.svg"
+                />
+              </p>
+              <div class="accept-order-form-code-label-block">
+                <input
+                  class="accept-order-form-code-label-input"
+                  data-code="1"
+                />
+                <input
+                  class="accept-order-form-code-label-input"
+                  data-code="2"
+                />
+                <input
+                  class="accept-order-form-code-label-input"
+                  data-code="3"
+                />
+                <input
+                  class="accept-order-form-code-label-input"
+                  data-code="4"
+                />
+              </div>
+            </label>
+
+            <p class="accept-order-form-notification">
+              Вже зареєстрований ?
+              <a class="accept-order-form-notification-link"
+                >Перейти до авторизації.</a
+              >
+            </p>
+
+            <div class="accept-order-form-submit">
+              <div class="accept-order-form-submit-agree">
+                <div class="accept-order-form-submit-agree-checkbox">
+                  <img
+                    class="accept-order-form-submit-agree-checkbox-img"
+                    src="../images/icons/accept-order-icon.svg"
+                  />
+                </div>
+                <p class="accept-order-form-submit-agree-text">
+                  Я ознайомлений та згоден з
+                  <a class="accept-order-form-submit-agree-link">
+                    публічної оферти</a
+                  >
+                  та
+                  <a class="accept-order-form-submit-agree-link"
+                    >політикою конфіденційності</a
+                  >
+                </p>
+              </div>
+              <button class="accept-order-form-submit-button">Сплатити</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,4 +1,4 @@
-let slider = document.querySelector(
+const slider = document.querySelector(
   ".calculator__interface-advanced-scorematch-input"
 );
 
@@ -12,7 +12,7 @@ slider.style.backgroundImage =
 
 slider.addEventListener("input", function () {
   document.querySelector(
-    ".calculator__interface-advanced-scorematch-current"
+    ".calculator__interface-advanced-scorematch-input"
   ).innerText = slider.value;
   let value = (slider.value - slider.min) / (slider.max - slider.min);
   slider.style.backgroundImage =

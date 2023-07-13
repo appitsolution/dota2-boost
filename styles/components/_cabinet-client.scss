@@ -952,3 +952,269 @@
         }
     }
 }
+
+.cabinet-client-settings {
+    &-block {
+        display: flex;
+        gap: 65px;
+        margin-top: 10px;
+    }
+    &-nav {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+        max-width: 315px;
+        width: 100%;
+        border-radius: 20px;
+        padding: 8px;
+        background: #181818;
+
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            border-radius: 20px;
+            padding: 20px 36px;
+            width: 100%;
+            background: #101010;
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            cursor: pointer;
+            transition: background 250ms linear;
+
+            &.active {
+                background: #3c3c3c;
+            }
+
+            &:hover {
+                background: #3c3c3c;
+            }
+        }
+    }
+
+    &-account {
+        width: 75%;
+
+        &-title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 0.2px;
+            white-space: nowrap;
+
+            &::after {
+                content: "";
+                width: 75%;
+                height: 2px;
+                background: #3c3c3c;
+                border-radius: 5px;
+            }
+        }
+
+        &-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            padding: 48px 0;
+            padding-left: 87px;
+        }
+
+        &-text {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-button-bot {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 20px;
+            background: linear-gradient(180deg, #2ca4e0 0%, #0d83bf 100%);
+            padding: 20px 36px;
+
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            cursor: pointer;
+        }
+
+        &-label {
+            width: calc((100% - 30px) / 2);
+
+            &-title {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 10px;
+            }
+
+            &-block {
+                display: flex;
+                overflow: hidden;
+                background: #181818;
+                border-radius: 20px;
+            }
+
+            &-after {
+                width: 69px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: #3c3c3c;
+                padding: 10px;
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+
+            &-input {
+                width: 100%;
+                padding: 19px;
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+
+                &::placeholder {
+                    color: #505050;
+                }
+            }
+        }
+    }
+
+    &-notification {
+        &-title {
+            position: relative;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 500;
+            line-height: 120%;
+            letter-spacing: 0.2px;
+            white-space: nowrap;
+
+            &::after {
+                content: "";
+                width: 75%;
+                height: 2px;
+                background: #3c3c3c;
+                border-radius: 5px;
+            }
+        }
+
+        &-wrapper {
+            padding: 48px 0 48px 87px;
+        }
+        &-second {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            margin-top: 24px;
+            margin-bottom: 24px;
+            padding-left: 16px;
+        }
+
+        &-block {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        &-button {
+            display: flex;
+            gap: 10px;
+            padding: 0 16px;
+            border-radius: 20px;
+            cursor: pointer;
+
+            &.important {
+                padding: 16px;
+                background: #181818;
+            }
+
+            &-input {
+                min-width: 20px;
+                height: 20px;
+                border-radius: 5px;
+                background-color: #3c3c3c;
+                &:checked {
+                    background-image: url("../../images/icons/accept-order-icon.svg");
+                    background-repeat: no-repeat;
+                    background-position: center;
+                }
+            }
+            &-text {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &-button-bot {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            border-radius: 20px;
+            background: linear-gradient(180deg, #2ca4e0 0%, #0d83bf 100%);
+            padding: 15px 36px;
+            margin-left: 15px;
+
+            color: #fff;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+            cursor: pointer;
+        }
+    }
+}
+
+.cabinet-client-order {
+    &-calculator {
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+}

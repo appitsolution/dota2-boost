@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="first-container">
+        <div class="header-block">
+          <nav class="header-navigation">
+            <div class="header-navigation__logo">
+              <a href="/" class="header-navigation__logo-link">
+                <img
+                  class="header-navigation__logo-link-icon"
+                  src="./images/icons/logo-2.svg"
+                  alt="logo"
+                />
+              </a>
+            </div>
+
+            <ul class="header-navigation__menu">
+              <li class="header-navigation__menu-item">
+                <a href="/" class="header-navigation__menu-link"> DotaBoost </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a href="/" class="header-navigation__menu-link"> Послуги </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a href="/" class="header-navigation__menu-link"> Про нас </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a href="/" class="header-navigation__menu-link"> Робота </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a href="./blog.html" class="header-navigation__menu-link">
+                  Блог
+                </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a href="/" class="header-navigation__menu-link"> FAQ </a>
+              </li>
+            </ul>
+
+            <div class="header-navigation__profile">
+              <div class="header-navigation__profile-info">
+                <div class="header-navigation__profile-info-block">
+                  <img
+                    class="header-navigation__profile-info-image"
+                    alt="profile"
+                    src="./images/profile-image.png"
+                  />
+                  <p class="header-navigation__profile-info-name">Marakesh</p>
+                  <button class="header-navigation__profile-info-notification">
+                    <img
+                      class="header-navigation__profile-info-notification-icon"
+                      alt="profile-icon"
+                      src="./images/icons/notifications.svg"
+                    />
+                  </button>
+                </div>
+
+                <div class="header-navigation__profile-menu-block">
+                  <div class="header-navigation__profile-menu">
+                    <a
+                      href="./cabinet.html"
+                      class="header-navigation__profile-menu-button"
+                    >
+                      <img
+                        class="header-navigation__profile-menu-button-icon"
+                        src="./images/icons/account.svg"
+                        alt="icon-menu"
+                      />
+                      Профіль
+                    </a>
+                    <button class="header-navigation__profile-menu-button">
+                      <img
+                        class="header-navigation__profile-menu-button-icon"
+                        src="./images/icons/settings-profile.svg"
+                        alt="icon-menu"
+                      />
+                      Налаштування
+                    </button>
+                    <button class="header-navigation__profile-menu-button">
+                      <img
+                        class="header-navigation__profile-menu-button-icon"
+                        src="./images/icons/out-profile.svg"
+                        alt="icon-menu"
+                      />
+                      Вихід
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <section class="cabinet-clinet-settings">
+      <div class="second-container">
+        <a href="./" class="cabinet-back">
+          <img
+            class="cabinet-back-img"
+            alt="cabinet-back"
+            src="./images/icons/arrow.svg"
+          />
+          Налаштування
+        </a>
+        <div class="cabinet-client-settings-block">
+          <div class="cabinet-client-settings-nav">
+            <button class="cabinet-client-settings-nav-button">
+              <img
+                class="cabinet-client-settings-nav-button-icon"
+                src="./images/icons/account.svg"
+              />
+              Аккаунт
+            </button>
+            <button class="cabinet-client-settings-nav-button active">
+              <img
+                class="cabinet-client-settings-nav-button-icon"
+                src="./images/icons/notifications.svg"
+              />
+              Повідомлення
+            </button>
+          </div>
+          <div class="cabinet-client-settings-notification">
+            <p class="cabinet-client-settings-notification-title">
+              З’вязок з вами
+            </p>
+
+            <div class="cabinet-client-settings-notification-wrapper">
+              <p class="cabinet-client-settings-notification-second">
+                Повідомлення на Електронну Пошту
+              </p>
+
+              <div class="cabinet-client-settings-notification-block">
+                <label
+                  class="cabinet-client-settings-notification-button important"
+                >
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати повідомлення особистого кабінету на електронну
+                    пошту.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати листи електронною поштою з рекламними
+                    пропозиціями, спеціальними пропозиціями для вас.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати листи електронною поштою з новинами нашого
+                    сервісу: оновленнями, новими послугами та можливостями.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати на електронну пошту щотижневий дайджест с
+                    ігровими новинами, новинами українського кіберспорту, тощо.
+                  </p>
+                </label>
+              </div>
+
+              <p class="cabinet-client-settings-notification-second">
+                Повідомлення через Чат Бот Телеграм
+              </p>
+
+              <div class="cabinet-client-settings-notification-block">
+                <label
+                  class="cabinet-client-settings-notification-button important"
+                >
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати повідомлення особистого кабінету на електронну
+                    пошту.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати повідомлення від чат-боту з рекламними
+                    пропозиціями, спеціальними пропозиціями для вас.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати повідомлення від чат-боту з новинами нашого
+                    сервісу: оновленнями, новими послугами та можливостями.
+                  </p>
+                </label>
+                <label class="cabinet-client-settings-notification-button">
+                  <input
+                    class="cabinet-client-settings-notification-button-input"
+                    type="checkbox"
+                  />
+                  <p class="cabinet-client-settings-notification-button-text">
+                    Отримувати в чат-боті щотижневий дайджест с ігровими
+                    новинами, новинами українського кіберспорту, тощо.
+                  </p>
+                </label>
+              </div>
+
+              <p class="cabinet-client-settings-notification-second">
+                Авторизація в Боті
+              </p>
+
+              <button class="cabinet-client-settings-notification-button-bot">
+                <img
+                  class="cabinet-client-settings-notification-button-bot-icon"
+                  src="./images/icons/telegram.svg"
+                />
+                Авторизація в Боті
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,175 @@
+.cabinet-booster {
+    padding: 32px 8px;
+    &-block {
+        display: flex;
+    }
+
+    &-navigation {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        max-width: 130px;
+
+        &-nav {
+            display: flex;
+            align-items: center;
+            flex-direction: column;
+            gap: 40px;
+
+            &-logo {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                padding: 12px 16px;
+                border-radius: 20px;
+                background: #181818;
+                cursor: pointer;
+            }
+
+            &-menu {
+                display: flex;
+                flex-direction: column;
+                gap: 16px;
+
+                &-button {
+                    border-radius: 20px;
+                    background: transparent;
+                    padding: 0px 20px;
+                    transition: background 250ms linear;
+                    transition-property: background, padding;
+                    cursor: pointer;
+
+                    &:hover {
+                        padding: 28px 20px;
+                        background: #181818;
+                    }
+
+                    &:hover &-icon {
+                        fill: white;
+                    }
+
+                    &:hover &-text {
+                        opacity: 1;
+                        height: 14px;
+                        margin-top: 4px;
+                    }
+
+                    &.active {
+                        padding: 28px 20px;
+                        background: #181818;
+                    }
+                    &.active &-icon {
+                        fill: white;
+                    }
+
+                    &.active &-text {
+                        opacity: 1;
+                        height: 14px;
+                        margin-top: 4px;
+                    }
+
+                    &-icon {
+                        width: 32px;
+                        height: 32px;
+                        padding: 12px 16px;
+                        border-radius: 20px;
+                        background: #3c3c3c;
+                        fill: #969696;
+
+                        transition: fill 250ms linear;
+                    }
+
+                    &-text {
+                        height: 0;
+                        opacity: 0;
+                        pointer-events: none;
+                        color: #fff;
+                        text-align: center;
+                        font-family: Gilroy;
+                        font-size: 14px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: normal;
+                        letter-spacing: 0.7px;
+                        margin-top: 0px;
+                        transition: opacity 250ms linear;
+                        transition-property: opacity, margin-top;
+                    }
+                }
+            }
+        }
+
+        &-control {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            &-button {
+                border-radius: 20px;
+                background: transparent;
+                padding: 0px 20px;
+                transition: background 250ms linear;
+                transition-property: background, padding;
+                cursor: pointer;
+
+                &:hover {
+                    padding: 28px 20px;
+                    background: #181818;
+                }
+
+                &:hover &-icon {
+                    fill: white;
+                }
+
+                &:hover &-text {
+                    opacity: 1;
+                    height: 14px;
+                    margin-top: 4px;
+                }
+
+                &.active {
+                    padding: 28px 20px;
+                    background: #181818;
+                }
+                &.active &-icon {
+                    fill: white;
+                }
+
+                &.active &-text {
+                    opacity: 1;
+                    height: 14px;
+                    margin-top: 4px;
+                }
+
+                &-icon {
+                    width: 32px;
+                    height: 32px;
+                    padding: 12px 16px;
+                    border-radius: 20px;
+                    background: #3c3c3c;
+                    margin-bottom: 4px;
+                    fill: #969696;
+
+                    transition: fill 250ms linear;
+                }
+
+                &-text {
+                    height: 0;
+                    opacity: 0;
+                    pointer-events: none;
+                    color: #fff;
+                    text-align: center;
+                    font-family: Gilroy;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                    letter-spacing: 0.7px;
+                    margin-top: 0px;
+                    transition: opacity 250ms linear;
+                    transition-property: opacity, margin-top;
+                }
+            }
+        }
+    }
+}
