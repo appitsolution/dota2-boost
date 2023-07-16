@@ -1,0 +1,173 @@
+.chat {
+    &-block {
+        max-width: 288px;
+        background-color: #181818;
+        border-radius: 20px;
+        overflow: hidden;
+        transition: max-width 250ms linear;
+
+        &.active {
+            max-width: 400px;
+        }
+    }
+
+    &-head {
+        display: flex;
+        background-color: #3c3c3c;
+        border-radius: 20px;
+        padding: 13px 16px;
+
+        &-info {
+            display: flex;
+            align-items: center;
+            gap: 16px;
+            &-avatar {
+                border-radius: 20px;
+                overflow: hidden;
+            }
+
+            &-title {
+                &-position {
+                    color: #969696;
+                    font-family: Gilroy;
+                    font-size: 14px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                &-name {
+                    color: #fff;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                }
+            }
+        }
+
+        &-open {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            padding: 19px;
+            border-radius: 20px;
+            background: #ffc700;
+            cursor: pointer;
+
+            transition: background 250ms linear;
+
+            &.active {
+                background: #181818;
+            }
+
+            &.active &-icon {
+                transform: rotate(180deg);
+                stroke: white;
+            }
+
+            &-icon {
+                width: 18px;
+                height: 18px;
+                stroke: #181818;
+                transition: stroke 250ms linear;
+                transition-property: stroke, transform;
+            }
+        }
+    }
+
+    &-show {
+        max-height: 0px;
+        transition: max-height 250ms ease-out;
+        transition-delay: 400ms;
+        &.active {
+            max-height: 650px;
+        }
+    }
+
+    &-flow {
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+
+        min-height: 385px;
+        padding: 16px 8px;
+
+        &-me {
+            &-text {
+                border-radius: 20px 20px 0px 20px;
+                background: #24c16c;
+                padding: 24px;
+                max-width: 315px;
+                margin-left: auto;
+
+                color: #101010;
+                font-family: Noto Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 21.6px */
+            }
+        }
+
+        &-his {
+            &-text {
+                border-radius: 20px;
+                background: #3c3c3c;
+                padding: 24px;
+                max-width: 315px;
+                margin-right: auto;
+
+                color: #fff;
+                font-family: Noto Sans;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: 120%; /* 21.6px */
+            }
+        }
+    }
+
+    &-send {
+        height: 74px;
+        padding: 0 8px 8px 8px;
+        &-block {
+            display: flex;
+            align-items: center;
+            padding: 8px 8px 8px 16px;
+            border-radius: 20px;
+            background: #3c3c3c;
+        }
+
+        &-input {
+            padding-top: 1px;
+            width: 100%;
+
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            &::placeholder {
+                color: #969696;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+            }
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 17px;
+            border-radius: 20px;
+            background: #ffc700;
+        }
+    }
+}

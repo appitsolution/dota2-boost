@@ -3,6 +3,16 @@
     padding: 0;
 }
 
+*::-webkit-scrollbar {
+    appearance: none;
+    max-width: 4px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background: #3c3c3c;
+    border-radius: 37px;
+}
+
 html {
     background-color: #000000;
 }

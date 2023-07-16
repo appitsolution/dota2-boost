@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/main.css" />
+  </head>
+  <body>
+    <div class="chat">
+      <div class="chat-block">
+        <div class="chat-head">
+          <div class="chat-head-info">
+            <div class="chat-head-info-avatar">
+              <img
+                class="chat-head-info-avatar-img"
+                src="../images/Manager_Photo.png"
+              />
+            </div>
+            <div class="chat-head-info-title">
+              <p class="chat-head-info-title-position">Менеджер</p>
+              <p class="chat-head-info-title-name">Денис</p>
+            </div>
+          </div>
+          <button class="chat-head-open">
+            <svg class="chat-head-open-icon">
+              <use href="../images/icons/arrow-chat.svg#arrow"></use>
+            </svg>
+          </button>
+        </div>
+
+        <div class="chat-show">
+          <div class="chat-flow">
+            <div class="chat-flow-me">
+              <p class="chat-flow-me-text">
+                Привіт! Я маю питання щодо моєї замовленої послуги. Можете мені
+                допомогти?
+              </p>
+
+              <p class="chat-flow-me-date">13:15</p>
+            </div>
+            <div class="caht-flow-his">
+              <p class="chat-flow-his-text">
+                Привіт! Я маю питання щодо моєї замовленої послуги. Можете мені
+                допомогти?
+              </p>
+
+              <p class="chat-flow-his-date">13:15</p>
+            </div>
+
+            <div class="chat-flow-me">
+              <p class="chat-flow-me-text">
+                Я хотів би дізнатись, коли очікувати завершення мого замовлення.
+                Чи є у вас інформація про терміни?
+              </p>
+
+              <p class="chat-flow-me-date">13:15</p>
+            </div>
+          </div>
+
+          <div class="chat-send">
+            <div class="chat-send-block">
+              <input class="chat-send-input" placeholder="Ваше Повідомлення" />
+              <button class="chat-send-button">
+                <img
+                  class="chat-send-button-icon"
+                  src="../images/icons/send.svg"
+                />
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      const chatEl = document.querySelector(".chat-show");
+      const chatBlockEl = document.querySelector(".chat-block");
+      const chatButtonEl = document.querySelector(".chat-head-open");
+
+      const toggleChat = () => {
+        chatEl.classList.toggle("active");
+        chatBlockEl.classList.toggle("active");
+        chatButtonEl.classList.toggle("active");
+      };
+
+      chatButtonEl.addEventListener("click", toggleChat);
+    </script>
+  </body>
+</html>

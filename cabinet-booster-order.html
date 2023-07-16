@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <section class="cabinet-booster">
+      <div class="cabinet-booster-block">
+        <div class="cabinet-booster-navigation">
+          <div class="cabinet-booster-navigation-nav">
+            <a class="cabinet-booster-navigation-nav-logo">
+              <img
+                class="cabinet-booster-navigation-nav-logo-icon"
+                src="./images/icons/logo.svg"
+                alt="logo"
+              />
+            </a>
+
+            <div class="cabinet-booster-navigation-nav-menu">
+              <button class="cabinet-booster-navigation-nav-menu-button">
+                <svg class="cabinet-booster-navigation-nav-menu-button-icon">
+                  <use
+                    href="./images/icons/sprite-cabinet-booster.svg#home"
+                  ></use>
+                </svg>
+
+                <p class="cabinet-booster-navigation-nav-menu-button-text">
+                  Головна
+                </p>
+              </button>
+              <button class="cabinet-booster-navigation-nav-menu-button active">
+                <svg class="cabinet-booster-navigation-nav-menu-button-icon">
+                  <use
+                    href="./images/icons/sprite-cabinet-booster.svg#list_alt"
+                  ></use>
+                </svg>
+                <p class="cabinet-booster-navigation-nav-menu-button-text">
+                  Замовлення
+                </p>
+              </button>
+              <button class="cabinet-booster-navigation-nav-menu-button">
+                <svg class="cabinet-booster-navigation-nav-menu-button-icon">
+                  <use
+                    href="./images/icons/sprite-cabinet-booster.svg#settings"
+                  ></use>
+                </svg>
+                <p class="cabinet-booster-navigation-nav-menu-button-text">
+                  Налаштування
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div class="cabinet-booster-navigation-control">
+            <button class="cabinet-booster-navigation-control-button">
+              <svg class="cabinet-booster-navigation-control-button-icon">
+                <use
+                  href="./images/icons/sprite-cabinet-booster.svg#help"
+                ></use>
+              </svg>
+              <p class="cabinet-booster-navigation-control-button-text">
+                Бустеропедія
+              </p>
+            </button>
+            <button class="cabinet-booster-navigation-control-button">
+              <svg class="cabinet-booster-navigation-control-button-icon">
+                <use
+                  href="./images/icons/sprite-cabinet-booster.svg#report"
+                ></use>
+              </svg>
+              <p class="cabinet-booster-navigation-control-button-text"></p>
+            </button>
+            <button class="cabinet-booster-navigation-control-button">
+              <svg class="cabinet-booster-navigation-control-button-icon">
+                <use href="./images/icons/sprite-cabinet-booster.svg#out"></use>
+              </svg>
+              <p class="cabinet-booster-navigation-control-button-text"></p>
+            </button>
+          </div>
+        </div>
+
+        <div class="cabinet-booster-order">
+          <div class="cabinet-booster-order-wallet">
+            <div class="cabinet-booster-order-wallet-title">
+              <img
+                class="cabinet-booster-order-wallet-title-icon"
+                src="./images/icons/account_balance_wallet.svg"
+                alt="wallet"
+              />
+
+              <p class="cabinet-booster-order-wallet-title-text">Гаманець</p>
+            </div>
+
+            <div class="cabinet-booster-order-wallet-balance">
+              <div class="cabinet-booster-order-wallet-balance-block">
+                <p class="cabinet-booster-order-wallet-balance-symbol">₴</p>
+                <p class="cabinet-booster-order-wallet-balance-text">3158</p>
+              </div>
+              <p class="cabinet-booster-order-wallet-balance-currency">
+                Українська Гривня
+              </p>
+            </div>
+            <div class="cabinet-booster-order-wallet-control">
+              <button class="cabinet-booster-order-wallet-control-button">
+                <img
+                  class="cabinet-booster-order-wallet-control-button-icon"
+                  src="./images/icons/send_money.svg"
+                />
+
+                <p class="cabinet-booster-order-wallet-control-button-text">
+                  Виплата
+                </p>
+              </button>
+              <button class="cabinet-booster-order-wallet-control-button">
+                <img
+                  class="cabinet-booster-order-wallet-control-button-icon"
+                  src="./images/icons/history-white.svg"
+                />
+
+                <p class="cabinet-booster-order-wallet-control-button-text">
+                  Історія
+                </p>
+              </button>
+            </div>
+          </div>
+
+          <div class="cabinet-booster-order-stats">
+            <div class="cabinet-booster-order-stats-title">
+              <div class="cabinet-booster-order-stats-title-block">
+                <img
+                  class="cabinet-booster-order-stats-title-icon"
+                  src="./images/icons/bar_chart_4_bars.svg"
+                />
+                <p class="cabinet-booster-order-stats-title-head">Статистика</p>
+              </div>
+
+              <div class="cabinet-booster-order-stats-title-period">
+                <button class="cabinet-booster-order-stats-title-period-button">
+                  Тиждень
+                </button>
+                <button class="cabinet-booster-order-stats-title-period-button">
+                  Місяць
+                </button>
+              </div>
+            </div>
+
+            <ul class="cabinet-booster-order-stats-list">
+              <li class="cabinet-booster-order-stats-item">
+                <p class="cabinet-booster-order-stats-item-value">14</p>
+                <p class="cabinet-booster-order-stats-item-label">
+                  Виконано Замовлень
+                </p>
+                <button class="cabinet-booster-order-stats-item-history">
+                  <img
+                    src="./images/icons/history.svg"
+                    alt="history"
+                    class="cabinet-booster-order-stats-item-history-icon"
+                  />
+                </button>
+              </li>
+              <li class="cabinet-booster-order-stats-item">
+                <p class="cabinet-booster-order-stats-item-value">1785 ₴</p>
+                <p class="cabinet-booster-order-stats-item-label">
+                  Винагорода за Замовлення
+                </p>
+                <button class="cabinet-booster-order-stats-item-history">
+                  <img
+                    src="./images/icons/history.svg"
+                    alt="history"
+                    class="cabinet-booster-order-stats-item-history-icon"
+                  />
+                </button>
+              </li>
+              <li class="cabinet-booster-order-stats-item">
+                <p class="cabinet-booster-order-stats-item-value">149</p>
+                <p class="cabinet-booster-order-stats-item-label">
+                  Матчів Зіграно
+                </p>
+                <button class="cabinet-booster-order-stats-item-history">
+                  <img
+                    src="./images/icons/history.svg"
+                    alt="history"
+                    class="cabinet-booster-order-stats-item-history-icon"
+                  />
+                </button>
+              </li>
+              <li class="cabinet-booster-order-stats-item">
+                <p class="cabinet-booster-order-stats-item-value green">
+                  +1785
+                </p>
+                <p class="cabinet-booster-order-stats-item-label">
+                  Динаміка ММР
+                </p>
+              </li>
+              <li class="cabinet-booster-order-stats-item">
+                <p class="cabinet-booster-order-stats-item-value green">78%</p>
+                <p class="cabinet-booster-order-stats-item-label">Вінрейт</p>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="cabinet-booster-order-history">
+          <div class="cabinet-booster-order-history-item">
+            <div class="cabinet-booster-profile-orders-item-thoomb">
+              <div class="cabinet-booster-profile-orders-item-decor">
+                <img
+                  class="cabinet-booster-profile-orders-item-decor-icon"
+                  src="./images/icons/sentiment_dissatisfied.svg"
+                  alt="decor"
+                />
+              </div>
+
+              <p class="cabinet-booster-profile-orders-item-thoomb-text">
+                На даний момент ви ще не взяли в роботу замовлення одиночного
+                бустингу.
+              </p>
+            </div>
+          </div>
+          <div class="cabinet-booster-order-history-item">
+            <div class="cabinet-booster-order-history-item-block">
+              <div class="cabinet-booster-order-history-item-stats">
+                <div class="cabinet-booster-order-history-item-stats-id">
+                  <p class="cabinet-booster-order-history-item-stats-id-text">
+                    №
+                  </p>
+                  <p class="cabinet-booster-order-history-item-stats-id-value">
+                    3213211123
+                  </p>
+                </div>
+
+                <div class="cabinet-booster-order-history-item-stats-date">
+                  <img
+                    class="cabinet-booster-order-history-item-stats-date-icon"
+                    src="./images/icons/schedule.svg"
+                    alt="time"
+                  />
+
+                  <p
+                    class="cabinet-booster-order-history-item-stats-date-value"
+                  >
+                    11:01:48
+                  </p>
+                </div>
+
+                <div class="cabinet-booster-order-history-item-stats-date">
+                  <img
+                    class="cabinet-booster-order-history-item-stats-date-icon"
+                    src="./images/icons/payments.svg"
+                    alt="time"
+                  />
+
+                  <p
+                    class="cabinet-booster-order-history-item-stats-date-value"
+                  >
+                    1745₴
+                  </p>
+                </div>
+
+                <div class="cabinet-booster-order-history-item-stats-percent">
+                  <img
+                    class="cabinet-booster-order-history-item-stats-percent-icon"
+                    src="./images/icons/percent.svg"
+                    alt="percent"
+                  />
+
+                  <p
+                    class="cabinet-booster-order-history-item-stats-percent-value"
+                  >
+                    56%
+                  </p>
+                  <div
+                    class="cabinet-booster-order-history-item-stats-percent-loading"
+                  ></div>
+                </div>
+              </div>
+
+              <div class="cabinet-booster-order-history-item-more">
+                <div class="cabinet-booster-order-history-item-more-info">
+                  <p
+                    class="cabinet-booster-order-history-item-more-info-status"
+                  >
+                    В Роботі
+                  </p>
+
+                  <p class="cabinet-booster-order-history-item-more-info-title">
+                    Одиночний MMR Boost
+                  </p>
+
+                  <div
+                    class="cabinet-booster-order-history-item-more-info-block"
+                  >
+                    <ul
+                      class="cabinet-booster-order-history-item-more-info-tags"
+                    >
+                      <li
+                        class="cabinet-booster-order-history-item-more-info-tags-item"
+                      >
+                        Турбо Режим
+                      </li>
+                      <li
+                        class="cabinet-booster-order-history-item-more-info-tags-item"
+                      >
+                        Офлайн Режим
+                      </li>
+                    </ul>
+
+                    <div
+                      class="cabinet-booster-order-history-item-more-info-time"
+                    >
+                      <p
+                        class="cabinet-booster-order-history-item-more-info-time-title"
+                      >
+                        Дозволений Час
+                      </p>
+
+                      <ul
+                        class="cabinet-booster-order-history-item-more-info-time-list"
+                      >
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-time-item"
+                        >
+                          13:00-18:00
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-time-item"
+                        >
+                          8:00-10:00
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div
+                      class="cabinet-booster-order-history-item-more-info-heroes"
+                    >
+                      <ul
+                        class="cabinet-booster-order-history-item-more-info-heroes-select"
+                      >
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-select-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-select-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-select-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-select-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-select-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-select-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-select-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-select-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                      </ul>
+
+                      <ul
+                        class="cabinet-booster-order-history-item-more-info-heroes-ban"
+                      >
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-ban-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-ban-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-ban-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-ban-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-ban-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-ban-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                        <li
+                          class="cabinet-booster-order-history-item-more-info-heroes-ban-item"
+                        >
+                          <img
+                            class="cabinet-booster-order-history-item-more-info-heroes-ban-item-img"
+                            src="./images/heroes/heros.png"
+                          />
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="cabinet-booster-order-history-item-more-control">
+                  <div
+                    class="cabinet-booster-order-history-item-more-control-match"
+                  >
+                    <div
+                      class="cabinet-booster-order-history-item-more-control-match-current"
+                    >
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-match-current-text"
+                      >
+                        Поточний ММР
+                      </p>
+                      <div
+                        class="cabinet-booster-order-history-item-more-control-match-current-block"
+                      >
+                        <p
+                          class="cabinet-booster-order-history-item-more-control-match-current-value"
+                        >
+                          3265
+                        </p>
+
+                        <img
+                          class="cabinet-booster-order-history-item-more-control-match-current-img"
+                          src="./images/icons/arrow_up_small.svg"
+                        />
+
+                        <p
+                          class="cabinet-booster-order-history-item-more-control-match-current-value"
+                        >
+                          3270
+                        </p>
+                      </div>
+                    </div>
+
+                    <div
+                      class="cabinet-booster-order-history-item-more-control-match-last"
+                    >
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-match-last-text"
+                      >
+                        Матчів Залишилося
+                      </p>
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-match-last-value"
+                      >
+                        ~0 матчів
+                      </p>
+                    </div>
+                  </div>
+
+                  <div
+                    class="cabinet-booster-order-history-item-more-control-buttons"
+                  >
+                    <button
+                      class="cabinet-booster-order-history-item-more-control-buttons-button"
+                    >
+                      <img
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-icon"
+                        src="./images/icons/stadia_controller.svg"
+                      />
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-text"
+                      >
+                        Результат Матчу
+                      </p>
+                    </button>
+                    <button
+                      class="cabinet-booster-order-history-item-more-control-buttons-button"
+                    >
+                      <img
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-icon"
+                        src="./images/icons/key.svg"
+                      />
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-text"
+                      >
+                        Дані Аккаунту
+                      </p>
+                    </button>
+                    <button
+                      class="cabinet-booster-order-history-item-more-control-buttons-button"
+                    >
+                      <img
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-icon"
+                        src="./images/icons/accept.svg"
+                      />
+                      <p
+                        class="cabinet-booster-order-history-item-more-control-buttons-button-text"
+                      >
+                        Завершити Роботу
+                      </p>
+                    </button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <script src="./js/cabinet-booster.js"></script>
+  </body>
+</html>

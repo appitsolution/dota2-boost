@@ -1,0 +1,257 @@
+.create-review {
+    &-block {
+        max-width: 600px;
+        background-color: #181818;
+        border-radius: 20px;
+    }
+
+    &-head {
+        display: flex;
+        align-items: center;
+        border-radius: 20px;
+        background: #3c3c3c;
+        padding: 8px;
+
+        &-number {
+            display: flex;
+            border-radius: 20px;
+            background: #101010;
+            margin-right: 16px;
+            &-decor {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 14px 16px;
+                border-radius: 20px;
+                background: #505050;
+
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            &-text {
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+                color: #fff;
+                font-family: Noto Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+        }
+
+        &-date {
+            display: flex;
+            border-radius: 20px;
+            background: #101010;
+            margin-right: 16px;
+            &-decor {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                padding: 14px 16px;
+                border-radius: 20px;
+                background: #505050;
+
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+
+            &-text {
+                display: flex;
+                align-items: center;
+                padding: 0 16px;
+                color: #fff;
+                font-family: Noto Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+        }
+
+        &-close {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: auto;
+            padding: 15px 16px;
+            border-radius: 20px;
+            background: #505050;
+            cursor: pointer;
+        }
+    }
+
+    &-content {
+        padding: 24px 24px 8px 24px;
+
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 28px */
+            letter-spacing: 0.28px;
+            margin-bottom: 4px;
+        }
+
+        &-desc {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 14px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 32px;
+        }
+
+        &-input {
+            width: 100%;
+            box-sizing: border-box;
+            border: none;
+            border-radius: 20px;
+            background: #101010;
+            padding: 16px;
+            min-height: 150px;
+            resize: none;
+
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 16px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            letter-spacing: -0.56px;
+
+            &::placeholder {
+                color: #505050;
+                font-family: Noto Sans;
+                font-size: 16px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.56px;
+            }
+
+            &:focus {
+                outline: none;
+            }
+        }
+
+        &-grade {
+            display: flex;
+            padding: 16px 0;
+            border-radius: 20px;
+            background: #101010;
+
+            &-service {
+                width: 50%;
+                padding: 0 16px;
+                border-right: 2px solid #3c3c3c;
+                &-title {
+                    color: #fff;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 8px;
+                }
+
+                &-stars {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+            &-booster {
+                width: 50%;
+                padding: 0 16px;
+                &-title {
+                    color: #fff;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    margin-bottom: 8px;
+                }
+                &-stars {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                }
+            }
+        }
+    }
+
+    &-submit {
+        padding: 8px 24px 32px 24px;
+        &-accept {
+            padding: 16px;
+            display: flex;
+            gap: 10px;
+            cursor: pointer;
+
+            &-checkbox {
+                min-width: 20px;
+                height: 20px;
+                box-sizing: border-box;
+                border-radius: 5px;
+                background-color: #505050;
+                background-position: center;
+                background-repeat: no-repeat;
+                cursor: pointer;
+
+                &:checked {
+                    background-image: url("../../images/icons/accept-order-icon.svg");
+                }
+            }
+
+            &-text {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 14px;
+                font-style: normal;
+                font-weight: 400;
+                line-height: normal;
+                user-select: none;
+            }
+        }
+
+        &-button {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 20px 0;
+            border-radius: 20px;
+            background: #ffc700;
+
+            color: #101010;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+
+            cursor: pointer;
+        }
+    }
+}

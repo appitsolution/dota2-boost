@@ -1,0 +1,94 @@
+.popup-help {
+    position: relative;
+    display: inline-flex;
+    border-radius: 20px;
+    overflow: hidden;
+    background: linear-gradient(135deg, #101010 0%, #332d57 93.75%, #37335b 99.99%, #101010 100%);
+
+    &-block {
+        display: inline-flex;
+    }
+
+    &-content {
+        padding: 48px 0 48px 48px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 64px */
+            margin-bottom: 16px;
+            max-width: 376px;
+        }
+
+        &-desc {
+            color: #fff;
+            font-family: Noto Sans;
+            font-size: 20px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 120%; /* 24px */
+            letter-spacing: 0.2px;
+            margin-bottom: 30px;
+            max-width: 346px;
+        }
+
+        &-social {
+            display: flex;
+            gap: 10px;
+
+            &-chat {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+                border-radius: 20px;
+                background: #ffc700;
+                padding: 15px 36px;
+
+                color: #101010;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+                cursor: pointer;
+            }
+
+            &-telegram {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                border-radius: 20px;
+                background: linear-gradient(180deg, #2ca4e0 0%, #0d83bf 100%);
+            }
+
+            &-email {
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 15px;
+                border-radius: 20px;
+                background: #004498;
+            }
+        }
+    }
+
+    &-close {
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 15px 16px 16px 16px;
+        border-radius: 20px;
+        background: rgba(16, 16, 16, 0.2);
+    }
+}
