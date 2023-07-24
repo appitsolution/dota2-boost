@@ -1,0 +1,472 @@
+.profile-booster {
+    background:
+        linear-gradient(0deg, rgba(0, 0, 0, 0.2) 0%, rgba(0, 0, 0, 0.2) 100%),
+        url("../../images/bg-about.png"),
+        #000 50% / cover no-repeat;
+
+    background-size: cover;
+    background-repeat-x: no-repeat;
+    padding-bottom: 84px;
+
+    &-head {
+        padding: 48px 0 24px 0;
+        &-path {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-bottom: 8px;
+
+            &-text {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%; /* 28px */
+                letter-spacing: 0.28px;
+            }
+
+            &-decor {
+                width: 8px;
+                height: 8px;
+                background: #fff;
+                border-radius: 50%;
+            }
+        }
+
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 64px */
+
+            &-span {
+                color: #ffc700;
+            }
+        }
+    }
+
+    &-block {
+        border-radius: 40px;
+        background: rgba(24, 24, 24, 0.6);
+        padding: 16px 16px 32px 16px;
+
+        display: flex;
+        flex-direction: column;
+        gap: 32px;
+    }
+
+    &-info {
+        display: flex;
+        gap: 16px;
+        border-radius: 20px;
+        background: #181818;
+
+        &-avatar {
+            &-img {
+                border-radius: 20px;
+                width: 212px;
+                height: 212px;
+            }
+        }
+
+        &-block {
+            width: 100%;
+            display: flex;
+            align-items: center;
+            gap: 32px;
+        }
+
+        &-content {
+            &-head {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+
+                margin-bottom: 32px;
+
+                &-block {
+                    &-rank {
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                    &-name {
+                        display: flex;
+
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 28px;
+                        font-style: normal;
+                        font-weight: 700;
+                        line-height: 100%; /* 28px */
+                        letter-spacing: 0.28px;
+                    }
+                }
+
+                &-like {
+                    display: flex;
+                    gap: 8px;
+
+                    border-radius: 20px;
+                    background: #24c16c;
+                    padding: 12px 16px;
+
+                    color: #fff;
+                    text-align: center;
+                    font-family: Montserrat;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: normal;
+                }
+            }
+            &-desc {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: normal;
+            }
+        }
+
+        &-stats {
+            padding: 16px;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+            width: 100%;
+
+            &-flex {
+                display: flex;
+                gap: 10px;
+            }
+
+            &-game {
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                border-radius: 20px;
+                background: #101010;
+                width: 100%;
+
+                &-icon {
+                    width: 54px;
+                    height: 54px;
+                }
+
+                &-head {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    &-text {
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    &-title {
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            &-rank {
+                padding: 16px;
+                display: flex;
+                align-items: center;
+                gap: 16px;
+
+                border-radius: 20px;
+                background: #101010;
+                width: 100%;
+
+                &-icon {
+                    width: 54px;
+                    height: 54px;
+                }
+
+                &-head {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 4px;
+                    &-text {
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+
+                    &-title {
+                        color: #fff;
+                        text-align: left;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 600;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            &-score {
+                width: 100%;
+                padding: 16px 32px;
+                border-radius: 20px;
+                background: #101010;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 4px;
+
+                &-title {
+                    color: #969696;
+                    text-align: center;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: normal;
+                }
+
+                &-value {
+                    color: #fff;
+                    text-align: center;
+                    font-family: Gilroy;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 28px */
+                    letter-spacing: 0.28px;
+                }
+            }
+        }
+    }
+
+    &-review {
+        padding: 16px;
+        border-radius: 20px;
+        background: #181818;
+
+        &-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+        }
+
+        &-item {
+            padding: 32px;
+            width: calc((100% - (16px + 32px * 6)) / 3);
+            border-radius: 20px;
+            background: #101010;
+
+            &-flex {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            &-text {
+                display: flex;
+                flex-direction: column;
+                gap: 4px;
+
+                &-title {
+                    color: #fff;
+                    text-align: left;
+                    font-family: Gilroy;
+                    font-size: 28px;
+                    font-style: normal;
+                    font-weight: 700;
+                    line-height: 100%; /* 28px */
+                    letter-spacing: 0.28px;
+                }
+
+                &-number {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    color: #fff;
+                    font-family: Gilroy;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+
+                    &-date {
+                        color: #fff;
+                        font-family: Gilroy;
+                        font-size: 18px;
+                        font-style: normal;
+                        font-weight: 400;
+                        line-height: normal;
+                    }
+                }
+            }
+
+            &-star {
+                display: flex;
+                align-items: center;
+                gap: 8px;
+
+                padding: 8px 16px;
+                border-radius: 20px;
+                background: #181818;
+
+                color: #ffc700;
+                font-family: Gilroy;
+                font-size: 28px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: 100%; /* 28px */
+                letter-spacing: 0.28px;
+            }
+
+            &-message {
+                color: #fff;
+                font-family: Noto Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%; /* 24px */
+                letter-spacing: 0.2px;
+                margin-top: 16px;
+            }
+        }
+
+        &-pagination {
+            display: flex;
+            justify-content: flex-end;
+            gap: 8px;
+
+            &-button {
+                padding: 13px 20px;
+                border-radius: 12px;
+                background: #181818;
+
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+
+                &.active {
+                    background: #3c3c3c;
+                }
+            }
+
+            &-decor {
+                display: flex;
+                align-items: center;
+
+                border-radius: 12px;
+                background: #181818;
+
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+            }
+        }
+    }
+
+    &-history {
+        &-flex {
+            display: flex;
+            gap: 32px;
+        }
+
+        &-orders {
+            width: 100%;
+
+            &-title {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 16px;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 8px;
+            }
+        }
+        &-matches {
+            width: 100%;
+
+            &-title {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.4px;
+                margin-bottom: 16px;
+            }
+
+            &-list {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+        }
+
+        &-more {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 32px;
+
+            &-button {
+                display: flex;
+                align-items: center;
+                gap: 10px;
+
+                padding: 24px 36px;
+                border-radius: 20px;
+                background: #181818;
+
+                color: #fff;
+                text-align: center;
+                font-family: Montserrat;
+                font-size: 18px;
+                font-style: normal;
+                font-weight: 700;
+                line-height: normal;
+            }
+        }
+    }
+}

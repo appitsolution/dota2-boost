@@ -1,0 +1,239 @@
+.faq-page {
+    &-head {
+        padding: 48px 48px 24px 48px;
+        &-span {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 28px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 28px */
+            letter-spacing: 0.28px;
+        }
+
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 64px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: 100%; /* 64px */
+        }
+    }
+
+    &-block {
+        padding: 48px;
+        border-radius: 20px;
+        background: #101010;
+        margin-top: 40px;
+        margin-bottom: 40px;
+    }
+
+    &-primary {
+        &-block {
+            display: flex;
+            flex-direction: column;
+            gap: 32px;
+        }
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            margin-bottom: 4px;
+        }
+
+        &-span {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+            margin-bottom: 32px;
+        }
+
+        &-flex {
+            display: flex;
+            gap: 32px;
+        }
+
+        &-question {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 32px 32px 42px 32px;
+            width: 100%;
+            border-radius: 20px;
+            background: #181818;
+
+            &-icon {
+                width: 32px;
+                height: 32px;
+                padding: 20px;
+                border-radius: 20px;
+                background: #101010;
+                margin-bottom: 16px;
+            }
+
+            &-title {
+                color: #fff;
+                text-align: center;
+                font-family: Gilroy;
+                font-size: 24px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                margin-bottom: 8px;
+            }
+
+            &-desc {
+                color: #fff;
+                text-align: center;
+                font-family: Noto Sans;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%; /* 24px */
+                letter-spacing: 0.2px;
+            }
+        }
+    }
+
+    &-question {
+        margin-top: 64px;
+        display: flex;
+        flex-direction: column;
+        gap: 48px;
+
+        &-flex {
+            display: flex;
+            align-items: flex-start;
+        }
+
+        &-block {
+            width: 60%;
+
+            &-title {
+                color: #fff;
+                font-family: Gilroy;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 600;
+                line-height: normal;
+                letter-spacing: -0.4px;
+            }
+        }
+
+        &-list {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        &-item {
+            display: flex;
+            flex-direction: column;
+            padding: 36px 48px;
+            border-radius: 20px;
+            background: #181818;
+
+            &-button {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                gap: 40px;
+                cursor: pointer;
+
+                &-text {
+                    color: #fff;
+                    font-family: Gilroy;
+                    font-size: 24px;
+                    font-style: normal;
+                    font-weight: 600;
+                    line-height: normal;
+                    text-align: left;
+                }
+
+                &-icon {
+                    transform: rotate(180deg);
+                    transition: transform 250ms linear;
+                }
+                &.active &-icon {
+                    transform: rotate(0);
+                }
+
+                &.active + .faq-page-question-item-show {
+                    margin-top: 30px;
+                    max-height: 300px;
+                }
+            }
+
+            &-show {
+                overflow: hidden;
+                max-height: 0;
+                color: #fff;
+                text-align: left;
+                font-family: Noto Sans;
+                font-size: 15px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 120%; /* 24px */
+                letter-spacing: 0.2px;
+                transition: max-height 250ms linear;
+                transition-property: max-height, margin;
+            }
+        }
+    }
+
+    &-send {
+        display: flex;
+        justify-content: space-between;
+        margin-top: 64px;
+
+        border-radius: 20px;
+        background: #181818;
+        padding: 32px 48px;
+
+        &-title {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 600;
+            line-height: normal;
+            letter-spacing: -0.4px;
+            margin-bottom: 4px;
+        }
+
+        &-second {
+            color: #fff;
+            font-family: Gilroy;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 400;
+            line-height: normal;
+        }
+
+        &-button {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            border-radius: 20px;
+            background: #ffc700;
+            padding: 20px 36px;
+
+            color: #181818;
+            text-align: center;
+            font-family: Montserrat;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 700;
+            line-height: normal;
+        }
+    }
+}

@@ -1,0 +1,962 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./styles/main.css" />
+  </head>
+  <body>
+    <!-- Header -->
+
+    <header class="header">
+      <div class="first-container">
+        <div class="header-block">
+          <nav class="header-navigation">
+            <div class="header-navigation__logo">
+              <a href="/" class="header-navigation__logo-link">
+                <img
+                  class="header-navigation__logo-link-icon"
+                  src="./images/icons/logo.svg"
+                  alt="logo"
+                />
+              </a>
+
+              <div class="header-navigation__logo-game">
+                <button class="header-navigation__logo-game-react">
+                  <img
+                    class="header-navigation__logo-game-react-decor"
+                    src="./images/icons/dota2.svg"
+                    alt="dota2"
+                  />
+                  Dota 2
+                  <img
+                    class="header-navigation__logo-game-react-icon"
+                    src="./images/icons/arrow.svg"
+                    alt="arrow"
+                  />
+                </button>
+
+                <div class="header-navigation__logo-game-selected">
+                  <button class="header-navigation__logo-game-selected-button">
+                    <img
+                      class="header-navigation__logo-game-react-decor"
+                      src="./images/icons/dota2.svg"
+                      alt="dota2"
+                    />
+                    Dota 2
+                  </button>
+                </div>
+              </div>
+            </div>
+            <ul class="header-navigation__menu">
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> DotaBoost </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Послуги </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Про нас </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Робота </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> Блог </a>
+              </li>
+              <li class="header-navigation__menu-item">
+                <a to="/" class="header-navigation__menu-link"> FAQ </a>
+              </li>
+            </ul>
+
+            <div class="header-navigation__profile">
+              <button class="header-navigation__profile-button">
+                <img
+                  class="header-navigation__profile-button-icon"
+                  src="./images/icons/account.svg"
+                  alt="account"
+                />
+                Особистий кабінет
+              </button>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </header>
+
+    <!-- !Header -->
+
+    <section class="service-boost">
+      <div class="second-container">
+        <div class="service-boost-head">
+          <div class="service-boost-head-path">
+            <p class="service-boost-head-path-text">Послуги</p>
+            <div class="service-boost-head-path-decor"></div>
+            <p class="service-boost-head-path-text">Моніторинг Замовлень</p>
+          </div>
+
+          <div class="service-boost-head-titles">
+            <h1 class="service-boost-head-titles-title">
+              Відстежуй Замовлення з будь якого пристрою
+            </h1>
+
+            <div class="service-boost-head-titles-notification"></div>
+          </div>
+        </div>
+        <div class="service-boost-block">
+          <div class="service-boost-tracking">
+            <div class="service-boost-tracking-head">
+              <div class="service-boost-tracking-head-item">
+                <h2 class="service-boost-tracking-head-item-title">
+                  Пошук по номеру замовлення
+                </h2>
+                <p class="service-boost-tracking-head-item-desc">
+                  Відстежуйте замовлення з легкістю: прозора система моніторингу
+                  процесу буста у режимі реального часу!
+                </p>
+              </div>
+              <div class="service-boost-tracking-head-line"></div>
+              <div class="service-boost-tracking-head-item">
+                <h2 class="service-boost-tracking-head-item-title">
+                  Останні Активності по Замовленням
+                </h2>
+                <p class="service-boost-tracking-head-item-desc">
+                  Спостерігайте за успіхами наших бустерів: останні результати
+                  матчів від команди професіоналів!
+                </p>
+              </div>
+            </div>
+            <div class="service-boost-tracking-info">
+              <div class="profile-booster-history-orders">
+                <div class="service-boost-tracking-info-search">
+                  <label class="service-boost-tracking-info-search-label">
+                    <input
+                      class="service-boost-tracking-info-search-label-input"
+                      placeholder="Номер Замовлення"
+                    />
+                    <button
+                      class="service-boost-tracking-info-search-label-button"
+                    >
+                      <img
+                        class="service-boost-tracking-info-search-label-button-icon"
+                        src="./images/icons/arrow-black.svg"
+                      />
+                    </button>
+                  </label>
+
+                  <div class="service-boost-tracking-info-search-activity">
+                    <button
+                      class="service-boost-tracking-info-search-activity-active active"
+                    >
+                      Активні
+                    </button>
+                    <button
+                      class="service-boost-tracking-info-search-activity-out"
+                    >
+                      Виконані
+                    </button>
+                  </div>
+                </div>
+
+                <ul class="profile-booster-history-orders-list">
+                  <li class="cabinet-information__order-item">
+                    <div class="cabinet-information__order-info-work">
+                      <div class="cabinet-information__order-info-work-id">
+                        <p class="cabinet-information__order-info-work-id-text">
+                          №
+                        </p>
+                        <p
+                          class="cabinet-information__order-info-work-id-value"
+                        >
+                          3213211123
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-date">
+                        <img
+                          class="cabinet-information__order-info-work-date-icon"
+                          src="./images/icons/schedule.svg"
+                          alt="time"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-date-value"
+                        >
+                          11:01:48
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-percent">
+                        <img
+                          class="cabinet-information__order-info-work-percent-icon"
+                          src="./images/icons/percent.svg"
+                          alt="percent"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-percent-value"
+                        >
+                          56%
+                        </p>
+                        <div
+                          class="cabinet-information__order-info-work-percent-loading"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__order-show-work">
+                      <div class="cabinet-information__order-show-work-block">
+                        <div
+                          class="cabinet-information__order-show-work-content"
+                        >
+                          <div
+                            class="cabinet-information__order-show-work-content-status"
+                          >
+                            <div
+                              class="cabinet-information__order-show-work-content-status-decor"
+                            ></div>
+                            <div
+                              class="cabinet-information__order-show-work-content-status-text"
+                            >
+                              В Роботі
+                            </div>
+                          </div>
+
+                          <h3
+                            class="cabinet-information__order-show-work-content-title"
+                          >
+                            MMR Boost
+                          </h3>
+                          <p
+                            class="cabinet-information__order-show-work-content-number"
+                          >
+                            1250 - 3270
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cabinet-information__order-show-work-server">
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Бан Часу
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Турбо Режим
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Офлайн Режим
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__order-item">
+                    <div class="cabinet-information__order-info-work">
+                      <div class="cabinet-information__order-info-work-id">
+                        <p class="cabinet-information__order-info-work-id-text">
+                          №
+                        </p>
+                        <p
+                          class="cabinet-information__order-info-work-id-value"
+                        >
+                          3213211123
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-date">
+                        <img
+                          class="cabinet-information__order-info-work-date-icon"
+                          src="./images/icons/schedule.svg"
+                          alt="time"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-date-value"
+                        >
+                          11:01:48
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-percent">
+                        <img
+                          class="cabinet-information__order-info-work-percent-icon"
+                          src="./images/icons/percent.svg"
+                          alt="percent"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-percent-value"
+                        >
+                          56%
+                        </p>
+                        <div
+                          class="cabinet-information__order-info-work-percent-loading"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__order-show-work">
+                      <div class="cabinet-information__order-show-work-block">
+                        <div
+                          class="cabinet-information__order-show-work-content"
+                        >
+                          <div
+                            class="cabinet-information__order-show-work-content-status"
+                          >
+                            <div
+                              class="cabinet-information__order-show-work-content-status-decor"
+                            ></div>
+                            <div
+                              class="cabinet-information__order-show-work-content-status-text"
+                            >
+                              В Роботі
+                            </div>
+                          </div>
+
+                          <h3
+                            class="cabinet-information__order-show-work-content-title"
+                          >
+                            MMR Boost
+                          </h3>
+                          <p
+                            class="cabinet-information__order-show-work-content-number"
+                          >
+                            1250 - 3270
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cabinet-information__order-show-work-server">
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Бан Часу
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Турбо Режим
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Офлайн Режим
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__order-item">
+                    <div class="cabinet-information__order-info-work">
+                      <div class="cabinet-information__order-info-work-id">
+                        <p class="cabinet-information__order-info-work-id-text">
+                          №
+                        </p>
+                        <p
+                          class="cabinet-information__order-info-work-id-value"
+                        >
+                          3213211123
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-date">
+                        <img
+                          class="cabinet-information__order-info-work-date-icon"
+                          src="./images/icons/schedule.svg"
+                          alt="time"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-date-value"
+                        >
+                          11:01:48
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__order-info-work-percent">
+                        <img
+                          class="cabinet-information__order-info-work-percent-icon"
+                          src="./images/icons/percent.svg"
+                          alt="percent"
+                        />
+
+                        <p
+                          class="cabinet-information__order-info-work-percent-value"
+                        >
+                          56%
+                        </p>
+                        <div
+                          class="cabinet-information__order-info-work-percent-loading"
+                        ></div>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__order-show-work">
+                      <div class="cabinet-information__order-show-work-block">
+                        <div
+                          class="cabinet-information__order-show-work-content"
+                        >
+                          <div
+                            class="cabinet-information__order-show-work-content-status"
+                          >
+                            <div
+                              class="cabinet-information__order-show-work-content-status-decor"
+                            ></div>
+                            <div
+                              class="cabinet-information__order-show-work-content-status-text"
+                            >
+                              В Роботі
+                            </div>
+                          </div>
+
+                          <h3
+                            class="cabinet-information__order-show-work-content-title"
+                          >
+                            MMR Boost
+                          </h3>
+                          <p
+                            class="cabinet-information__order-show-work-content-number"
+                          >
+                            1250 - 3270
+                          </p>
+                        </div>
+                      </div>
+                      <div class="cabinet-information__order-show-work-server">
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Бан Часу
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Турбо Режим
+                        </button>
+                        <button
+                          class="cabinet-information__order-show-work-server-button"
+                        >
+                          Офлайн Режим
+                        </button>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+              <div class="profile-booster-history-matches">
+                <ul class="profile-booster-history-matches-list">
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="cabinet-information__history-item">
+                    <div class="cabinet-information__history-info">
+                      <button class="cabinet-information__history-info-button">
+                        <img
+                          class="cabinet-information__history-info-button-icon"
+                          alt="open-button-icon"
+                          src="./images/icons/arrow.svg"
+                        />
+                      </button>
+
+                      <div class="cabinet-information__history-info-id">
+                        <p class="cabinet-information__history-info-id-text">
+                          id
+                        </p>
+                        <p class="cabinet-information__history-info-id-value">
+                          7214733882
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-date">
+                        <p class="cabinet-information__history-info-date-text">
+                          Час
+                        </p>
+                        <p class="cabinet-information__history-info-date-value">
+                          3 год. тому
+                        </p>
+                      </div>
+
+                      <div class="cabinet-information__history-info-status">
+                        <p
+                          class="cabinet-information__history-info-status-text"
+                        >
+                          W
+                        </p>
+                        <p
+                          class="cabinet-information__history-info-status-value"
+                        >
+                          +25 MMR
+                        </p>
+                      </div>
+                    </div>
+
+                    <div class="cabinet-information__history-show">
+                      <img
+                        class="cabinet-information__history-show-image"
+                        src="./images/icons/icon_hero.svg"
+                      />
+
+                      <div class="cabinet-information__history-show-block">
+                        <p class="cabinet-information__history-show-name">
+                          Ember Spirit
+                        </p>
+                        <p class="cabinet-information__history-show-date">
+                          21/1/16
+                        </p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <div class="second-container">
+        <div class="footer-block">
+          <div class="footer-content">
+            <div class="footer-content__settings">
+              <a class="footer-content__settings-logo">
+                <img
+                  class="footer-content__settings-logo-icon"
+                  src="./images/icons/logo.svg"
+                  alt="logo-footer"
+                />
+              </a>
+
+              <div class="footer-content__settings-security">
+                <a class="footer-content__settings-security-button">
+                  <img
+                    class="footer-content__settings-security-button-icon"
+                    alt="security"
+                    src="./images/icons/security.svg"
+                  />
+                </a>
+              </div>
+
+              <div class="footer-content__settings-award">
+                <a class="footer-content__settings-award-button">
+                  <img
+                    class="footer-content__settings-award-button-icon"
+                    alt="award"
+                    src="./images/icons/award_star.svg"
+                  />
+                </a>
+              </div>
+
+              <div class="footer-content__settings-lang">
+                <button class="footer-content__settings-lang-button">
+                  <img
+                    class="footer-content__settings-lang-button-icon"
+                    alt="lang"
+                    src="./images/icons/ua.svg"
+                  />
+                </button>
+
+                <div class="footer-content__settings-lang-button-selected">
+                  <button class="footer-content__settings-lang-button">
+                    <img
+                      class="footer-content__settings-lang-button-icon"
+                      alt="lang"
+                      src="./images/icons/pl.svg"
+                    />
+                  </button>
+                  <button class="footer-content__settings-lang-button">
+                    <img
+                      class="footer-content__settings-lang-button-icon"
+                      alt="lang"
+                      src="./images/icons/us.svg"
+                    />
+                  </button>
+                  <button class="footer-content__settings-lang-button">
+                    <img
+                      class="footer-content__settings-lang-button-icon"
+                      alt="lang"
+                      src="./images/icons/ru.svg"
+                    />
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            <div class="footer-content__company">
+              <p class="footer-content__company-title">Компанія</p>
+              <ul class="footer-content__company-menu">
+                <li class="footer-content__company-item">
+                  <a class="footer-content__company-link">Послуги</a>
+                </li>
+                <li class="footer-content__company-item">
+                  <a class="footer-content__company-link">Про Нас</a>
+                </li>
+                <li class="footer-content__company-item">
+                  <a class="footer-content__company-link">Робота</a>
+                </li>
+                <li class="footer-content__company-item">
+                  <a class="footer-content__company-link">Блог</a>
+                </li>
+                <li class="footer-content__company-item">
+                  <a class="footer-content__company-link">FAQ</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content__policy">
+              <p class="footer-content__policy-title">Правові</p>
+              <ul class="footer-content__policy-menu">
+                <li class="footer-content__policy-item">
+                  <a class="footer-content__policy-link"
+                    >Політика Конфіденційності</a
+                  >
+                </li>
+                <li class="footer-content__policy-item">
+                  <a class="footer-content__policy-link">Публічна Оферта</a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer-content__contacts">
+              <p class="footer-content__contacts-title">Контакти</p>
+              <ul class="footer-content__contacts-menu">
+                <li class="footer-content__contacts-item">
+                  <a class="footer-content__contacts-link">Зв’язок з нами</a>
+                </li>
+                <li class="footer-content__contacts-item">
+                  <a class="footer-content__contacts-link">Telegram</a>
+                </li>
+                <li class="footer-content__contacts-item">
+                  <a class="footer-content__contacts-link">Instagram</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="footer-payment">
+            <img
+              class="footer-payment-icon"
+              src="./images/icons/Visa.svg"
+              alt="payment"
+            />
+            <img
+              class="footer-payment-icon"
+              src="./images/icons/MasterCard.svg"
+              alt="payment"
+            />
+            <img
+              class="footer-payment-icon"
+              src="./images/icons/APay.svg"
+              alt="payment"
+            />
+            <img
+              class="footer-payment-icon"
+              src="./images/icons/GPay.svg"
+              alt="payment"
+            />
+          </div>
+
+          <div class="footer-by">
+            <p class="footer-by-text">
+              Dota 2 є зареєстрованою торговою маркою компанії Valve
+              Corporation. Ми не пов'язані з компанією Valve Corporation, не
+              асоційовані з нею і не підтримуємо її. GameBoost не відображає
+              погляди чи думки Valve Corporation.
+            </p>
+            <p class="footer-by-text">Всі права захищені ©GAMEBOOST 2023</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- !Footer -->
+  </body>
+</html>
