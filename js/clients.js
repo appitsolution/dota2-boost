@@ -2,7 +2,6 @@ const swiper = new Swiper(".swiper", {
   direction: "horizontal",
   freeMode: true,
   spaceBetween: 10,
-
   spaceBetween: 10,
   breakpoints: {
     320: {
