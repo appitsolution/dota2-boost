@@ -1000,6 +1000,8 @@
 
     &-account {
         width: 75%;
+        height: calc(100vh - 202px);
+        overflow-y: scroll;
 
         &-title {
             position: relative;
@@ -1113,6 +1115,8 @@
     }
 
     &-notification {
+        height: calc(100vh - 202px);
+        overflow-y: scroll;
         &-title {
             position: relative;
             display: flex;

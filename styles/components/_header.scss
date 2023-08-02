@@ -180,6 +180,7 @@
             padding: 8px 0;
             border-radius: 20px;
             overflow: hidden;
+
             &-block {
                 position: absolute;
                 top: 100%;
@@ -189,6 +190,7 @@
                 opacity: 0;
                 pointer-events: none;
                 transition: opacity 250ms linear;
+                z-index: 3;
             }
 
             &-button {
@@ -213,6 +215,34 @@
 
                 &:hover {
                     background: rgb(33, 33, 33);
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .header-navigation {
+        &__profile {
+            width: unset;
+            max-width: unset;
+            &-info {
+                &-name {
+                    display: none;
+                }
+
+                &-notification {
+                    display: none;
+                }
+
+                &-image {
+                    border-radius: 20px;
+                }
+            }
+
+            &-menu {
+                &-block {
+                    display: none;
                 }
             }
         }

@@ -5,6 +5,12 @@
         gap: 16px;
     }
 
+    &-flex {
+        display: flex;
+        gap: 16px;
+        overflow-y: scroll;
+        height: calc(100vh - 64px);
+    }
     &-navigation {
         display: flex;
         flex-direction: column;
@@ -12,6 +18,7 @@
         gap: 16px;
         max-width: 130px;
         width: 100%;
+        height: calc(100vh - 64px);
 
         &-nav {
             display: flex;
@@ -45,19 +52,8 @@
                     cursor: pointer;
                     width: 100%;
 
-                    &:hover {
-                        padding: 28px 0px;
-                        background: #181818;
-                    }
-
                     &:hover &-icon {
                         fill: white;
-                    }
-
-                    &:hover &-text {
-                        opacity: 1;
-                        height: 14px;
-                        margin-top: 4px;
                     }
 
                     &.active {
@@ -117,19 +113,8 @@
                 transition-property: background, padding;
                 cursor: pointer;
 
-                &:hover {
-                    padding: 28px 0px;
-                    background: #181818;
-                }
-
                 &:hover &-icon {
                     fill: white;
-                }
-
-                &:hover &-text {
-                    opacity: 1;
-                    height: 14px;
-                    margin-top: 4px;
                 }
 
                 &.active {
@@ -189,10 +174,10 @@
             gap: 16px;
             border-radius: 20px;
             background: #181818;
-            overflow: hidden;
 
             &-avatar {
                 max-width: 137px;
+                border-radius: 20px 0 0 20px;
             }
 
             &-titles {
@@ -267,6 +252,7 @@
                 min-height: 340px;
                 border-radius: 20px;
                 background: #181818;
+                box-sizing: border-box;
 
                 &-thoomb {
                     display: flex;
@@ -919,6 +905,14 @@
 
 .cabinet-booster-order {
     width: 40%;
+
+    &-flex {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        overflow-y: scroll;
+        height: calc(100vh - 64px);
+    }
     &-wallet {
         display: flex;
         flex-direction: column;
@@ -1556,6 +1550,13 @@
         gap: 16px;
         padding-top: 30px;
     }
+
+    &-flex {
+        display: flex;
+        gap: 16px;
+        align-items: flex-start;
+    }
+
     &-nav {
         display: flex;
         flex-direction: column;
@@ -1599,6 +1600,8 @@
         background: #181818;
         padding: 24px;
         border-radius: 20px;
+        overflow-y: scroll;
+        height: calc(100vh - 80px);
 
         &-title {
             display: flex;
@@ -1721,6 +1724,8 @@
         background: #181818;
         padding: 24px;
         border-radius: 20px;
+        overflow-y: scroll;
+        height: calc(100vh - 80px);
         &-title {
             display: flex;
             align-items: center;
@@ -1940,6 +1945,61 @@
             line-height: 120%; /* 24px */
             letter-spacing: 0.2px;
             padding-left: 16px;
+        }
+    }
+}
+
+@media screen and (min-width: 1280px) and (max-width: 1920px) {
+    .cabinet-booster {
+        &-flex {
+            width: 100%;
+            flex-direction: column;
+        }
+
+        &-profile {
+            width: 100%;
+
+            &-orders {
+                flex-direction: row;
+
+                &-line {
+                    display: none;
+                }
+            }
+        }
+
+        &-history {
+            width: 100%;
+        }
+    }
+
+    .cabinet-booster-order {
+        width: 100%;
+
+        &-wallet {
+            flex-direction: row;
+
+            &-block {
+                width: 100%;
+            }
+            &-control {
+                width: 100%;
+                flex-direction: column;
+
+                &-button {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-stats {
+            &-item {
+                width: calc((100% - 180px) / 3);
+            }
+        }
+
+        &-history {
+            width: 100%;
         }
     }
 }
