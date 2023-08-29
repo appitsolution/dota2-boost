@@ -1222,3 +1222,68 @@
         margin-bottom: 30px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .cabinet-back {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cabinet-control {
+        flex-direction: column;
+        gap: 30px;
+
+        &__info {
+            width: 100%;
+        }
+
+        &__navigation {
+            width: 100%;
+
+            &-button {
+                padding: 30px;
+            }
+        }
+    }
+
+    .cabinet-information {
+        flex-direction: column;
+        gap: 64px;
+
+        &__order {
+            width: 100%;
+        }
+
+        &__history {
+            width: 100%;
+        }
+    }
+
+    .cabinet-client-settings {
+        &-block {
+            flex-direction: column;
+        }
+
+        &-nav {
+            flex-direction: row;
+            max-width: unset;
+            box-sizing: border-box;
+        }
+
+        &-account {
+            width: 100%;
+            height: unset;
+
+            &-wrapper {
+                padding-left: 0;
+            }
+        }
+
+        &-notification {
+            height: unset;
+            &-wrapper {
+                padding-left: 0;
+            }
+        }
+    }
+}

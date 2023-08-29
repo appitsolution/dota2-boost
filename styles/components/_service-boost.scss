@@ -334,3 +334,49 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .service-boost {
+        &-more {
+            &-list {
+                flex-direction: column;
+            }
+
+            &-item {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-tracking {
+            &-head {
+                flex-direction: column;
+
+                &-line {
+                    display: none;
+                }
+
+                &-item:nth-child(3) {
+                    display: none;
+                }
+            }
+
+            &-info {
+                flex-direction: column;
+
+                &-search {
+                    &-activity {
+                        width: 100%;
+
+                        &-active {
+                            width: 50%;
+                        }
+                        &-out {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

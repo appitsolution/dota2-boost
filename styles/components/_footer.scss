@@ -7,6 +7,14 @@
     display: flex;
     align-items: flex-start;
 
+    &-flex {
+        display: flex;
+        gap: 120px;
+        align-items: flex-start;
+
+        margin-left: 120px;
+    }
+
     &__settings {
         display: flex;
         flex-direction: column;
@@ -78,7 +86,6 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-        margin-left: 120px;
 
         &-title {
             color: #fff;
@@ -110,7 +117,6 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-        margin-left: 120px;
 
         &-title {
             color: #fff;
@@ -142,7 +148,6 @@
         display: flex;
         flex-direction: column;
         gap: 24px;
-        margin-left: 120px;
 
         &-title {
             color: #fff;
@@ -194,5 +199,31 @@
         font-weight: 400;
         line-height: normal;
         letter-spacing: -0.42px;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .footer {
+        &-content {
+            &-flex {
+                flex-wrap: wrap;
+                margin-left: 48px;
+            }
+        }
+
+        &-payment {
+            margin-top: 60px;
+            justify-content: center;
+        }
+
+        &-by {
+            margin-top: 10px;
+            padding-left: 0;
+            align-items: center;
+
+            &-text {
+                text-align: center;
+            }
+        }
     }
 }

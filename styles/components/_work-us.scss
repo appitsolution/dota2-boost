@@ -569,3 +569,48 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .work-us-advantages {
+        &-you {
+            &-decor {
+                margin-top: auto;
+            }
+        }
+        &-our {
+            &-content {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .work-us-order {
+        &-form {
+            flex-direction: column;
+
+            &-personal {
+                flex-direction: row;
+                flex-wrap: wrap;
+                max-width: unset;
+                gap: 16px;
+
+                &-label {
+                    width: calc(50% - 8px);
+                }
+            }
+
+            &-game {
+                box-sizing: border-box;
+            }
+        }
+
+        &-submit {
+            flex-direction: column-reverse;
+
+            &-button {
+                justify-content: center;
+                max-width: unset;
+            }
+        }
+    }
+}

@@ -548,3 +548,132 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .about-page {
+        &-lead {
+            padding: 32px 0;
+            padding-top: 160px;
+            &-block {
+                flex-direction: column;
+            }
+
+            &-image {
+                width: 100%;
+
+                &-img {
+                    margin-top: -240px;
+                    margin-left: -110px;
+                    margin-bottom: 0;
+                }
+            }
+
+            &-content {
+                width: 100%;
+
+                &-title {
+                    font-size: 48px;
+                }
+            }
+        }
+        &-community {
+            padding: 32px 0;
+            &-block {
+                flex-direction: column;
+                padding: 48px 64px;
+            }
+
+            &-image {
+                width: 100%;
+
+                &-img {
+                    margin-top: 10px;
+                }
+            }
+
+            &-content {
+                width: 100%;
+
+                &-title {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        &-process {
+            padding: 32px 0;
+            &-flex {
+                flex-direction: column;
+                padding: 48px 64px;
+            }
+
+            &-image {
+                width: 100%;
+
+                &-img {
+                    margin: 0;
+                }
+            }
+
+            &-content {
+                width: 100%;
+
+                &-title {
+                    font-size: 48px;
+                }
+            }
+
+            &-check {
+                flex-direction: column;
+                gap: 32px;
+
+                &-button {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &-team {
+            padding: 0;
+            &-block {
+                flex-direction: column;
+                padding: 48px 64px;
+            }
+
+            &-image {
+                width: 100%;
+
+                &-img {
+                    margin-top: 10px;
+                    margin-bottom: -77px;
+                }
+            }
+
+            &-content {
+                width: 100%;
+
+                &-title {
+                    font-size: 48px;
+                }
+            }
+        }
+
+        &-users {
+            padding: 32px 0;
+
+            &-block {
+                background: none;
+                padding: 0;
+            }
+
+            &-list {
+                flex-direction: column;
+            }
+
+            &-item {
+                width: 100%;
+            }
+        }
+    }
+}

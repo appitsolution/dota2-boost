@@ -426,6 +426,10 @@
         &-matches {
             width: 100%;
 
+            &-mobile {
+                display: none;
+            }
+
             &-title {
                 color: #fff;
                 font-family: Gilroy;
@@ -466,6 +470,66 @@
                 font-style: normal;
                 font-weight: 700;
                 line-height: normal;
+            }
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .profile-booster {
+        &-block {
+            padding: 0;
+        }
+
+        &-info {
+            flex-direction: column;
+            padding: 16px;
+
+            &-stats {
+                box-sizing: border-box;
+            }
+        }
+
+        &-review {
+            &-list {
+                flex-direction: column;
+                margin-bottom: 16px;
+            }
+
+            &-item {
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-history {
+            &-flex {
+                flex-direction: column;
+            }
+
+            &-orders {
+                &-title {
+                    text-align: center;
+                }
+            }
+
+            &-matches {
+                &-title {
+                    text-align: center;
+                }
+                &-mobile {
+                    display: flex;
+                    margin: 0 -16px;
+
+                    & .service-boost-tracking-head-item {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 32px;
+                        border-radius: 40px;
+                        background: #181818;
+                        margin-bottom: 24px;
+                    }
+                }
             }
         }
     }

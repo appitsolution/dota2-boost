@@ -642,3 +642,82 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .preparation {
+        &-instruction {
+            &-item {
+                flex-direction: column;
+
+                &:last-child {
+                    flex-direction: column;
+                }
+
+                &-content {
+                    max-width: unset;
+
+                    &-title {
+                        text-align: center;
+                        font-size: 56px;
+                    }
+
+                    &-second {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &-details {
+            &-title {
+                text-align: center;
+                font-size: 56px;
+            }
+
+            &-form {
+                flex-direction: column;
+
+                &-block {
+                    max-width: unset;
+                }
+            }
+        }
+
+        &-additional {
+            &-title {
+                text-align: center;
+            }
+
+            &-heroes-control {
+                flex-direction: column;
+
+                &-select {
+                    width: 100%;
+                }
+                &-ban {
+                    width: 100%;
+                }
+            }
+
+            &-heroes-class {
+                flex-direction: column;
+
+                &-power {
+                    width: 100%;
+                }
+
+                &-agility {
+                    width: 100%;
+                }
+
+                &-intellect {
+                    width: 100%;
+                }
+
+                &-versatility {
+                    width: 100%;
+                }
+            }
+        }
+    }
+}

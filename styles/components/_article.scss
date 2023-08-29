@@ -1,7 +1,9 @@
 .article-hero {
     &-block {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%),
-            url(../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
+        background:
+            linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%),
+            url(../images/blog/blog-1.png),
+            lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
         background-repeat: no-repeat;
         width: 100%;
         background-position: center;
@@ -119,6 +121,18 @@
             line-height: 100%;
             letter-spacing: 0.28px;
             margin-bottom: 32px;
+        }
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .article-content {
+        &-also .blog-list {
+            flex-direction: column;
+        }
+
+        &-also .blog-item {
+            width: 100%;
         }
     }
 }

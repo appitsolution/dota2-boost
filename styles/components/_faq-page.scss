@@ -237,3 +237,48 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .faq-page {
+        &-primary {
+            &-flex {
+                flex-direction: column;
+            }
+            &-question {
+                padding: 32px;
+                box-sizing: border-box;
+            }
+        }
+
+        &-question {
+            &-block {
+                width: 100%;
+
+                &-title {
+                    text-align: center;
+                }
+            }
+            &-flex {
+                flex-direction: column;
+                gap: 32px;
+            }
+        }
+
+        &-send {
+            flex-direction: column;
+            gap: 32px;
+
+            &-title {
+                text-align: center;
+            }
+
+            &-second {
+                text-align: center;
+            }
+
+            &-button {
+                justify-content: center;
+            }
+        }
+    }
+}

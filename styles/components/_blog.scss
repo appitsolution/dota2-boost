@@ -130,3 +130,28 @@
         max-width: 319px;
     }
 }
+
+@media screen and (min-width: 768px) and (max-width: 1280px) {
+    .blog {
+        &-list {
+            gap: 16px;
+        }
+
+        &-item {
+            width: calc((100% - 16px) / 2);
+        }
+    }
+
+    .blog-hero {
+        &-title {
+            text-align: center;
+        }
+
+        &-link {
+            padding: 20px 36px;
+            margin: 0 auto;
+            border-radius: 20px;
+            background: rgba(24, 24, 24, 0.6);
+        }
+    }
+}

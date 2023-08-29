@@ -21,15 +21,23 @@ const banHeroes = document.querySelector(
 );
 
 const selectHero = (target) => {
-  console.log(target);
+  const checkSeleced = Array.from(selectedHeroes.children).find((item) => {
+    if (item.firstElementChild.src === target.src) {
+      return item;
+    }
+  });
 
-  if (Array.from(selectedHeroes.children).length >= 5) return;
+  if (checkSeleced) return;
+
+  if (Array.from(selectedHeroes.children).length >= 5) {
+    banHero(target, true);
+    return;
+  }
 
   const newList = [];
 
   Array.from(selectedHeroes.children).forEach((item) => {
     newList.push(item.outerHTML);
-    // console.dir(item);
   });
 
   selectedHeroes.innerHTML = [
@@ -44,13 +52,37 @@ const selectHero = (target) => {
 </button>`,
   ].join("");
 
-  // console.dir(newList.join(""));
   target.parentElement.classList.add("select");
 };
 
-const banHero = (target) => {
-  console.log("ban");
-  if (Array.from(banHeroes.children).length >= 5) return;
+const banHero = (target, selected = false) => {
+  if (Array.from(banHeroes.children).length >= 5) {
+    deleteHero(target);
+    return;
+  }
+
+  if (selected) {
+    const newList = [];
+
+    Array.from(banHeroes.children).forEach((item) => {
+      newList.push(item.outerHTML);
+    });
+
+    banHeroes.innerHTML = [
+      ...newList,
+      `<button
+    class="preparation-additional-heroes-control-ban-button"
+  >
+    <img
+      class="preparation-additional-heroes-control-ban-button-image"
+      src="${target.src}"
+    />
+  </button>`,
+    ].join("");
+
+    target.parentElement.classList.add("ban");
+    return;
+  }
 
   const checkSeleced = Array.from(selectedHeroes.children).find((item) => {
     if (item.firstElementChild.src === target.src) {
@@ -96,6 +128,7 @@ const deleteHero = (target) => {
       return item;
     }
   });
+
   if (checkBan) {
     const banList = [];
     Array.from(banHeroes.children).forEach((item) => {
@@ -104,6 +137,20 @@ const deleteHero = (target) => {
       }
       banHeroes.innerHTML = banList.join("");
     });
+  } else {
+    if (Array.from(selectedHeroes.children).length === 5) {
+      const banList = [];
+      Array.from(banHeroes.children).forEach((item) => {
+        if (item.firstElementChild.src !== target.src) {
+          banList.push(item.outerHTML);
+        }
+        banHeroes.innerHTML = banList.join("");
+        target.parentElement.classList.remove("ban");
+        return;
+      });
+    } else {
+      selectHero(target);
+    }
   }
 
   target.parentElement.classList.remove("ban");
