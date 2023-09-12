@@ -26,87 +26,268 @@
               <a href="/" class="header-navigation__logo-link">
                 <img
                   class="header-navigation__logo-link-icon"
-                  src="./images/icons/logo-2.svg"
+                  src="./images/icons/logo.svg"
                   alt="logo"
                 />
               </a>
-            </div>
 
+              <div class="header-navigation__logo-game">
+                <button class="header-navigation__logo-game-react">
+                  <img
+                    class="header-navigation__logo-game-react-decor"
+                    src="./images/icons/dota2.svg"
+                    alt="dota2"
+                  />
+                  Dota 2
+                  <img
+                    class="header-navigation__logo-game-react-icon"
+                    src="./images/icons/arrow.svg"
+                    alt="arrow"
+                  />
+                </button>
+
+                <div class="header-navigation__logo-game-selected">
+                  <button class="header-navigation__logo-game-selected-button">
+                    <img
+                      class="header-navigation__logo-game-react-decor"
+                      src="./images/icons/dota2.svg"
+                      alt="dota2"
+                    />
+                    Dota 2
+                  </button>
+                </div>
+              </div>
+            </div>
             <ul class="header-navigation__menu">
               <li class="header-navigation__menu-item">
-                <a href="/" class="header-navigation__menu-link"> DotaBoost </a>
+                <a to="/" class="header-navigation__menu-link"> DotaBoost </a>
               </li>
               <li class="header-navigation__menu-item">
-                <a href="/" class="header-navigation__menu-link"> Послуги </a>
+                <a to="/" class="header-navigation__menu-link"> Послуги </a>
               </li>
               <li class="header-navigation__menu-item">
-                <a href="/" class="header-navigation__menu-link"> Про нас </a>
+                <a to="/" class="header-navigation__menu-link"> Про нас </a>
               </li>
               <li class="header-navigation__menu-item">
-                <a href="/" class="header-navigation__menu-link"> Робота </a>
+                <a to="/" class="header-navigation__menu-link"> Робота </a>
               </li>
               <li class="header-navigation__menu-item">
-                <a href="./blog.html" class="header-navigation__menu-link">
-                  Блог
-                </a>
+                <a to="/" class="header-navigation__menu-link"> Блог </a>
               </li>
               <li class="header-navigation__menu-item">
-                <a href="/" class="header-navigation__menu-link"> FAQ </a>
+                <a to="/" class="header-navigation__menu-link"> FAQ </a>
               </li>
             </ul>
 
             <div class="header-navigation__profile">
-              <div class="header-navigation__profile-info">
-                <div class="header-navigation__profile-info-block">
+              <button class="header-navigation__profile-button">
+                <img
+                  class="header-navigation__profile-button-icon"
+                  src="./images/icons/account.svg"
+                  alt="account"
+                />
+                Особистий кабінет
+              </button>
+            </div>
+          </nav>
+          <ul class="header-navigation__menu-submenu">
+            <li class="header-navigation__menu-submenu-item">
+              <a class="header-navigation__menu-submenu-link">ММР Буст </a>
+            </li>
+            <li class="header-navigation__menu-submenu-item">
+              <a class="header-navigation__menu-submenu-link">Калібровка </a>
+            </li>
+            <li class="header-navigation__menu-submenu-item">
+              <a class="header-navigation__menu-submenu-link"
+                >Низький Пріорітет
+              </a>
+            </li>
+            <li class="header-navigation__menu-submenu-item">
+              <a class="header-navigation__menu-submenu-link"
+                >Оцінка Поведінки
+              </a>
+            </li>
+            <li class="header-navigation__menu-submenu-item">
+              <a class="header-navigation__menu-submenu-link"
+                >Моніторінг Замовлень
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="header-mobile-block">
+          <div class="header-mobile-navigation">
+            <div class="header-mobile-navigation-block">
+              <button class="header-mobile-navigation-avatar">
+                <img
+                  class="header-mobile-navigation-avatar-icon"
+                  src="./images/avatar-mob.png"
+                />
+              </button>
+              <button class="header-mobile-navigation-logo">
+                <img
+                  class="header-mobile-navigation-logo-icon"
+                  src="./images/icons/logo-2.svg"
+                />
+              </button>
+              <div class="header-mobile-navigation-nav">
+                <button class="header-mobile-navigation-nav-open">
                   <img
-                    class="header-navigation__profile-info-image"
-                    alt="profile"
-                    src="./images/profile-image.png"
+                    class="header-mobile-navigation-nav-open-icon"
+                    src="./images/icons/menu.svg"
                   />
-                  <p class="header-navigation__profile-info-name">Marakesh</p>
-                  <button class="header-navigation__profile-info-notification">
+                </button>
+                <button class="header-mobile-navigation-nav-report">
+                  <img
+                    class="header-mobile-navigation-nav-report-icon"
+                    src="./images/icons/headset_mic.svg"
+                  />
+                </button>
+                <button class="header-mobile-navigation-nav-close">
+                  <img
+                    class="header-mobile-navigation-nav-close-icon"
+                    src="./images/icons/close.svg"
+                  />
+                </button>
+              </div>
+            </div>
+            <div class="header-mobile-navigation-down">
+              <div class="header-mobile-navigation-down-account">
+                <div class="header-mobile-navigation-down-account-avatar">
+                  <img
+                    class="header-mobile-navigation-down-account-avatar-img"
+                    src="./images/avatar-mob.png"
+                  />
+                  <p class="header-mobile-navigation-down-account-avatar-name">
+                    Marakesh
+                  </p>
+                </div>
+                <div class="header-mobile-navigation-down-account-menu">
+                  <button
+                    class="header-mobile-navigation-down-account-menu-button"
+                  >
                     <img
-                      class="header-navigation__profile-info-notification-icon"
-                      alt="profile-icon"
+                      class="header-mobile-navigation-down-account-menu-button-icon"
                       src="./images/icons/notifications.svg"
                     />
                   </button>
-                </div>
-
-                <div class="header-navigation__profile-menu-block">
-                  <div class="header-navigation__profile-menu">
-                    <a
-                      href="./cabinet.html"
-                      class="header-navigation__profile-menu-button"
-                    >
-                      <img
-                        class="header-navigation__profile-menu-button-icon"
-                        src="./images/icons/account.svg"
-                        alt="icon-menu"
-                      />
-                      Профіль
-                    </a>
-                    <button class="header-navigation__profile-menu-button">
-                      <img
-                        class="header-navigation__profile-menu-button-icon"
-                        src="./images/icons/settings-profile.svg"
-                        alt="icon-menu"
-                      />
-                      Налаштування
-                    </button>
-                    <button class="header-navigation__profile-menu-button">
-                      <img
-                        class="header-navigation__profile-menu-button-icon"
-                        src="./images/icons/out-profile.svg"
-                        alt="icon-menu"
-                      />
-                      Вихід
-                    </button>
-                  </div>
+                  <button
+                    class="header-mobile-navigation-down-account-menu-button"
+                  >
+                    <img
+                      class="header-mobile-navigation-down-account-menu-button-icon"
+                      src="./images/icons/settings-profile.svg"
+                    />
+                  </button>
+                  <button
+                    class="header-mobile-navigation-down-account-menu-button"
+                  >
+                    <img
+                      class="header-mobile-navigation-down-account-menu-button-icon"
+                      src="./images/icons/logout.svg"
+                    />
+                  </button>
                 </div>
               </div>
+              <button class="header-mobile-navigation-down-manager">
+                <div class="header-mobile-navigation-down-manager-avatar">
+                  <img
+                    class="header-mobile-navigation-down-manager-avatar-icon"
+                    src="./images/Manager_Photo.png"
+                  />
+                  <div
+                    class="header-mobile-navigation-down-manager-avatar-text"
+                  >
+                    <p
+                      class="header-mobile-navigation-down-manager-avatar-text-server"
+                    >
+                      Менеджер
+                    </p>
+                    <p
+                      class="header-mobile-navigation-down-manager-avatar-text-name"
+                    >
+                      Денис
+                    </p>
+                  </div>
+                </div>
+
+                <div class="header-mobile-navigation-down-manager-button">
+                  <img
+                    class="header-mobile-navigation-down-manager-button-icon"
+                    src="./images/icons/arrow.svg"
+                  />
+                </div>
+              </button>
+              <button class="header-mobile-navigation-down-report">
+                <img
+                  class="header-mobile-navigation-down-report-icon"
+                  src="./images/icons/headset_mic.svg"
+                />
+                Зв’язок з нами
+              </button>
+              <div class="header-mobile-navigation-down-service">
+                <div class="header-mobile-navigation-down-service-one">
+                  <button
+                    class="header-mobile-navigation-down-service-one-button"
+                  >
+                    Буст ММР
+                  </button>
+                  <button
+                    class="header-mobile-navigation-down-service-one-button"
+                  >
+                    Калібровка
+                  </button>
+                  <button
+                    class="header-mobile-navigation-down-service-one-button"
+                  >
+                    Буст Порядності
+                  </button>
+                </div>
+                <div class="header-mobile-navigation-down-service-second">
+                  <button
+                    class="header-mobile-navigation-down-service-second-button"
+                  >
+                    Низький Пріорітет
+                  </button>
+                  <button
+                    class="header-mobile-navigation-down-service-second-button"
+                  >
+                    Моніторинг Замовлень
+                  </button>
+                </div>
+              </div>
+
+              <div class="header-mobile-navigation-down-menu">
+                <button class="header-mobile-navigation-down-menu-button">
+                  <img
+                    class="header-mobile-navigation-down-menu-button-icon"
+                    src="./images/icons/supervised_user_circle.svg"
+                  />
+                  Про Нас
+                </button>
+                <button class="header-mobile-navigation-down-menu-button">
+                  <img
+                    class="header-mobile-navigation-down-menu-button-icon"
+                    src="./images/icons/work.svg"
+                  />
+                  Робота
+                </button>
+                <button class="header-mobile-navigation-down-menu-button">
+                  <img
+                    class="header-mobile-navigation-down-menu-button-icon"
+                    src="./images/icons/newsmode.svg"
+                  />
+                  Блог
+                </button>
+                <button class="header-mobile-navigation-down-menu-button">
+                  <img
+                    class="header-mobile-navigation-down-menu-button-icon"
+                    src="./images/icons/faq.svg"
+                  />
+                  FAQ
+                </button>
+              </div>
             </div>
-          </nav>
+          </div>
         </div>
       </div>
     </header>
@@ -142,6 +323,50 @@
               />
             </button>
           </div>
+          <div class="hero-slider-alt">
+            <div class="swiper-2">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="hero-slider-alt-slide"
+                    src="./images/slider/slide-1.png"
+                    style="
+                      border-radius: 80px;
+                      background: linear-gradient(
+                        64deg,
+                        #1d7090 0%,
+                        #0094e8 92.94%
+                      );
+                    "
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-slider-alt-slide"
+                    src="./images/slider/Transperrent_Void_Hero.png"
+                    style="border-radius: 80px"
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="hero-slider-alt-slide"
+                    src="./images/slider/slide-3.png"
+                  />
+                </div>
+              </div>
+            </div>
+
+            <script>
+              const swiper2 = new Swiper(".swiper-2", {
+                // Optional parameters
+                direction: "horizontal",
+                loop: true,
+                autoplay: {
+                  delay: 5000,
+                },
+              });
+            </script>
+          </div>
         </div>
       </div>
     </section>
@@ -176,337 +401,195 @@
             </div>
           </div>
 
-          <div class="calculator__interface-elevated">
-            <div class="calculator__interface-elevated-advanced">
-              <div class="calculator__interface-elevated-advanced-lvl-first">
-                <img
-                  class="calculator__interface-elevated-advanced-lvl-first-img"
-                  src="./images/lvl-first.png"
-                />
-                <p
-                  class="calculator__interface-elevated-advanced-lvl-first-text"
-                >
-                  Божественний IV
+          <div class="calculator__interface-low">
+            <div class="calculator__interface-low-advanced">
+              <div class="calculator__interface-low-advanced-scorematch">
+                <p class="calculator__interface-low-advanced-scorematch-title">
+                  Кількість Матчів
                 </p>
+                <div
+                  class="calculator__interface-low-advanced-scorematch-block"
+                >
+                  <input
+                    type="range"
+                    min="1"
+                    max="10"
+                    step="1"
+                    value="7"
+                    class="calculator__interface-low-advanced-scorematch-input"
+                  />
+                  <p
+                    class="calculator__interface-low-advanced-scorematch-current"
+                  >
+                    7
+                  </p>
+                </div>
               </div>
 
-              <div class="calculator__interface-elevated-advanced__column">
-                <div class="calculator__interface-elevated-advanced__block">
+              <div class="calculator__interface-low-advanced-server">
+                <button
+                  class="calculator__interface-low-advanced-server-button"
+                >
                   <div
-                    class="calculator__interface-elevated-advanced-select-lvl"
+                    class="calculator__interface-low-advanced-server-button-text"
                   >
-                    <button
-                      class="calculator__interface-elevated-advanced-select-lvl-button"
-                    >
-                      <div
-                        class="calculator__interface-elevated-advanced-select-lvl-button-text"
-                      >
-                        Божественний IV
-                      </div>
-                      <img
-                        class="calculator__interface-elevated-advanced-select-lvl-button-icon"
-                        src="./images/icons/arrow.svg"
-                      />
-                    </button>
+                    <p class="calculator__interface-low-advanced-server-title">
+                      Послуга
+                    </p>
+                    Знижений Пріорітет
+                  </div>
+                  <img
+                    class="calculator__interface-low-advanced-server-button-icon"
+                    src="./images/icons/arrow.svg"
+                  />
+                </button>
 
+                <div class="calculator__interface-low-advanced-server-show">
+                  <button
+                    class="calculator__interface-low-advanced-server-button"
+                  >
                     <div
-                      class="calculator__interface-elevated-advanced-select-lvl-show"
+                      class="calculator__interface-low-advanced-server-button-text"
                     >
-                      <button
-                        class="calculator__interface-elevated-advanced-select-lvl-button"
+                      <p
+                        class="calculator__interface-low-advanced-server-title"
                       >
-                        <div
-                          class="calculator__interface-elevated-advanced-select-lvl-button-text"
-                        >
-                          Божественний IV
-                        </div>
-                        <img
-                          class="calculator__interface-elevated-advanced-select-lvl-button-icon"
-                          src="./images/icons/arrow.svg"
-                        />
-                      </button>
-                      <button
-                        class="calculator__interface-elevated-advanced-select-lvl-button"
-                      >
-                        Божественний IV
-                      </button>
-                      <button
-                        class="calculator__interface-elevated-advanced-select-lvl-button"
-                      >
-                        Божественний IV
-                      </button>
+                        Послуга
+                      </p>
+                      Знижений Пріорітет
                     </div>
-                  </div>
-
-                  <div
-                    class="calculator__interface-elevated-advanced-min-price"
+                    <img
+                      class="calculator__interface-low-advanced-server-button-icon"
+                      src="./images/icons/arrow.svg"
+                    />
+                  </button>
+                  <button
+                    class="calculator__interface-low-advanced-server-button"
                   >
-                    <p
-                      class="calculator__interface-elevated-advanced-min-price-title"
-                    >
-                      Початкова Оцінка
-                    </p>
-                    <button
-                      class="calculator__interface-elevated-advanced-min-price-minus"
-                    >
-                      -
-                    </button>
-
-                    <p
-                      class="calculator__interface-elevated-advanced-min-price-value"
-                    >
-                      5365
-                    </p>
-
-                    <button
-                      class="calculator__interface-elevated-advanced-min-price-plus"
-                    >
-                      +
-                    </button>
-                  </div>
-
-                  <div
-                    class="calculator__interface-elevated-advanced-scorematch"
+                    MMR Буст
+                  </button>
+                  <button
+                    class="calculator__interface-low-advanced-server-button"
                   >
-                    <p
-                      class="calculator__interface-elevated-advanced-scorematch-title"
-                    >
-                      Кількість Матчів
-                    </p>
-                    <div
-                      class="calculator__interface-elevated-advanced-scorematch-block"
-                    >
-                      <input
-                        type="range"
-                        min="1"
-                        max="10"
-                        step="1"
-                        value="7"
-                        class="calculator__interface-elevated-advanced-scorematch-input"
-                      />
-                    </div>
-                  </div>
-
-                  <div
-                    class="calculator__interface-elevated-advanced-max-price"
-                  >
-                    <p
-                      class="calculator__interface-elevated-advanced-max-price-title"
-                    >
-                      Кінцева Оцінка
-                    </p>
-                    <button
-                      class="calculator__interface-elevated-advanced-max-price-minus"
-                    >
-                      -
-                    </button>
-
-                    <p
-                      class="calculator__interface-elevated-advanced-max-price-value"
-                    >
-                      8000
-                    </p>
-
-                    <button
-                      class="calculator__interface-elevated-advanced-max-price-plus"
-                    >
-                      +
-                    </button>
-                  </div>
-                </div>
-
-                <div class="calculator__interface-elevated-advanced__block">
-                  <div class="calculator__interface-elevated-advanced-region">
-                    <p
-                      class="calculator__interface-elevated-advanced-region-text"
-                    >
-                      Сервер
-                    </p>
-                    <p
-                      class="calculator__interface-elevated-advanced-region-value"
-                    >
-                      Europa
-                    </p>
-                  </div>
-
-                  <div class="calculator__interface-elevated-advanced-server">
-                    <button
-                      class="calculator__interface-elevated-advanced-server-button"
-                    >
-                      <div
-                        class="calculator__interface-elevated-advanced-server-button-text"
-                      >
-                        <p
-                          class="calculator__interface-elevated-advanced-server-title"
-                        >
-                          Послуга
-                        </p>
-                        Підвищення Оцінки Поведінки
-                      </div>
-                      <img
-                        class="calculator__interface-elevated-advanced-server-button-icon"
-                        src="./images/icons/arrow.svg"
-                      />
-                    </button>
-
-                    <div
-                      class="calculator__interface-elevated-advanced-server-show"
-                    >
-                      <button
-                        class="calculator__interface-elevated-advanced-server-button"
-                      >
-                        <div
-                          class="calculator__interface-elevated-advanced-server-button-text"
-                        >
-                          <p
-                            class="calculator__interface-elevated-advanced-server-title"
-                          >
-                            Послуга
-                          </p>
-                          Підвищення Оцінки Поведінки
-                        </div>
-                        <img
-                          class="calculator__interface-elevated-advanced-server-button-icon"
-                          src="./images/icons/arrow.svg"
-                        />
-                      </button>
-                      <button
-                        class="calculator__interface-elevated-advanced-server-button"
-                      >
-                        MMR Буст
-                      </button>
-                      <button
-                        class="calculator__interface-elevated-advanced-server-button"
-                      >
-                        Калібровка
-                      </button>
-                    </div>
-                  </div>
+                    Калібровка
+                  </button>
                 </div>
               </div>
             </div>
 
-            <div class="calculator__interface-elevated-categories">
-              <ul class="calculator__interface-elevated-categories-select">
-                <li
-                  class="calculator__interface-elevated-categories-select-item"
-                >
+            <div class="calculator__interface-low-categories">
+              <ul class="calculator__interface-low-categories-select">
+                <li class="calculator__interface-low-categories-select-item">
                   <button
-                    class="calculator__interface-elevated-categories-select-button"
+                    class="calculator__interface-low-categories-select-button"
                   >
                     <div
-                      class="calculator__interface-elevated-categories-select-button-block"
+                      class="calculator__interface-low-categories-select-button-block"
                     >
                       <div
-                        class="calculator__interface-elevated-categories-select-button-selected"
+                        class="calculator__interface-low-categories-select-button-selected"
                       >
                         <img
-                          class="calculator__interface-elevated-categories-select-button-selected-icon"
+                          class="calculator__interface-low-categories-select-button-selected-icon"
                           src="./images/icons/checkbox.svg"
                           alt="checkbox"
                         />
                       </div>
                       <p
-                        class="calculator__interface-elevated-categories-select-button-text"
+                        class="calculator__interface-low-categories-select-button-text"
                       >
                         Грати з Бустером
                       </p>
                     </div>
                     <p
-                      class="calculator__interface-elevated-categories-select-button-percent"
+                      class="calculator__interface-low-categories-select-button-percent"
                     >
                       +20%
                     </p>
                   </button>
                 </li>
-                <li
-                  class="calculator__interface-elevated-categories-select-item"
-                >
+                <li class="calculator__interface-low-categories-select-item">
                   <button
-                    class="calculator__interface-elevated-categories-select-button"
+                    class="calculator__interface-low-categories-select-button"
                   >
                     <div
-                      class="calculator__interface-elevated-categories-select-button-block"
+                      class="calculator__interface-low-categories-select-button-block"
                     >
                       <div
-                        class="calculator__interface-elevated-categories-select-button-selected"
+                        class="calculator__interface-low-categories-select-button-selected"
                       >
                         <img
-                          class="calculator__interface-elevated-categories-select-button-selected-icon"
+                          class="calculator__interface-low-categories-select-button-selected-icon"
                           src="./images/icons/checkbox.svg"
                           alt="checkbox"
                         />
                       </div>
                       <p
-                        class="calculator__interface-elevated-categories-select-button-text"
+                        class="calculator__interface-low-categories-select-button-text"
                       >
                         Грати з Бустером
                       </p>
                     </div>
                     <p
-                      class="calculator__interface-elevated-categories-select-button-percent"
+                      class="calculator__interface-low-categories-select-button-percent"
                     >
                       +20%
                     </p>
                   </button>
                 </li>
-                <li
-                  class="calculator__interface-elevated-categories-select-item"
-                >
+                <li class="calculator__interface-low-categories-select-item">
                   <button
-                    class="calculator__interface-elevated-categories-select-button"
+                    class="calculator__interface-low-categories-select-button"
                   >
                     <div
-                      class="calculator__interface-elevated-categories-select-button-block"
+                      class="calculator__interface-low-categories-select-button-block"
                     >
                       <div
-                        class="calculator__interface-elevated-categories-select-button-selected"
+                        class="calculator__interface-low-categories-select-button-selected"
                       >
                         <img
-                          class="calculator__interface-elevated-categories-select-button-selected-icon"
+                          class="calculator__interface-low-categories-select-button-selected-icon"
                           src="./images/icons/checkbox.svg"
                           alt="checkbox"
                         />
                       </div>
                       <p
-                        class="calculator__interface-elevated-categories-select-button-text"
+                        class="calculator__interface-low-categories-select-button-text"
                       >
                         Грати з Бустером
                       </p>
                     </div>
                     <p
-                      class="calculator__interface-elevated-categories-select-button-percent"
+                      class="calculator__interface-low-categories-select-button-percent"
                     >
                       +20%
                     </p>
                   </button>
                 </li>
-                <li
-                  class="calculator__interface-elevated-categories-select-item"
-                >
+                <li class="calculator__interface-low-categories-select-item">
                   <button
-                    class="calculator__interface-elevated-categories-select-button"
+                    class="calculator__interface-low-categories-select-button"
                   >
                     <div
-                      class="calculator__interface-elevated-categories-select-button-block"
+                      class="calculator__interface-low-categories-select-button-block"
                     >
                       <div
-                        class="calculator__interface-elevated-categories-select-button-selected"
+                        class="calculator__interface-low-categories-select-button-selected"
                       >
                         <img
-                          class="calculator__interface-elevated-categories-select-button-selected-icon"
+                          class="calculator__interface-low-categories-select-button-selected-icon"
                           src="./images/icons/checkbox.svg"
                           alt="checkbox"
                         />
                       </div>
                       <p
-                        class="calculator__interface-elevated-categories-select-button-text"
+                        class="calculator__interface-low-categories-select-button-text"
                       >
                         Грати з Бустером
                       </p>
                     </div>
                     <p
-                      class="calculator__interface-elevated-categories-select-button-percent"
+                      class="calculator__interface-low-categories-select-button-percent"
                     >
                       +20%
                     </p>
@@ -515,31 +598,25 @@
               </ul>
             </div>
 
-            <div class="calculator__interface-elevated-success">
-              <div class="calculator__interface-elevated-success-bonus">
+            <div class="calculator__interface-low-success">
+              <div class="calculator__interface-low-success-bonus">
                 <input
-                  class="calculator__interface-elevated-success-bonus-input"
+                  class="calculator__interface-low-success-bonus-input"
                   placeholder="Введіть Промокод"
                 />
-                <button
-                  class="calculator__interface-elevated-success-bonus-button"
-                >
+                <button class="calculator__interface-low-success-bonus-button">
                   <img
-                    class="calculator__interface-elevated-success-bonus-button-icon"
+                    class="calculator__interface-low-success-bonus-button-icon"
                     alt="arrow"
                     src="./images/icons/arrow-black.svg"
                   />
                 </button>
               </div>
-              <button class="calculator__interface-elevated-success-payment">
-                <div
-                  class="calculator__interface-elevated-success-payment-value"
-                >
+              <button class="calculator__interface-low-success-payment">
+                <div class="calculator__interface-low-success-payment-value">
                   Сума 1219 ₴
                 </div>
-                <div
-                  class="calculator__interface-elevated-success-payment-text"
-                >
+                <div class="calculator__interface-low-success-payment-text">
                   Оформити Замовлення
                 </div>
               </button>

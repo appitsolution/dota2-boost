@@ -6,10 +6,37 @@
           <a href="/" class="header-navigation__logo-link">
             <img
               class="header-navigation__logo-link-icon"
-              src="./images/icons/logo-2.svg"
+              src="./images/icons/logo.svg"
               alt="logo"
             />
           </a>
+
+          <div class="header-navigation__logo-game">
+            <button class="header-navigation__logo-game-react">
+              <img
+                class="header-navigation__logo-game-react-decor"
+                src="./images/icons/dota2.svg"
+                alt="dota2"
+              />
+              Dota 2
+              <img
+                class="header-navigation__logo-game-react-icon"
+                src="./images/icons/arrow.svg"
+                alt="arrow"
+              />
+            </button>
+
+            <div class="header-navigation__logo-game-selected">
+              <button class="header-navigation__logo-game-selected-button">
+                <img
+                  class="header-navigation__logo-game-react-decor"
+                  src="./images/icons/dota2.svg"
+                  alt="dota2"
+                />
+                Dota 2
+              </button>
+            </div>
+          </div>
         </div>
         <ul class="header-navigation__menu">
           <li class="header-navigation__menu-item">
@@ -25,7 +52,7 @@
             <a to="/" class="header-navigation__menu-link"> Робота </a>
           </li>
           <li class="header-navigation__menu-item">
-            <a to="./blog.html" class="header-navigation__menu-link"> Блог </a>
+            <a to="/" class="header-navigation__menu-link"> Блог </a>
           </li>
           <li class="header-navigation__menu-item">
             <a to="/" class="header-navigation__menu-link"> FAQ </a>
@@ -33,54 +60,196 @@
         </ul>
 
         <div class="header-navigation__profile">
-          <div class="header-navigation__profile-info">
-            <div class="header-navigation__profile-info-block">
+          <button class="header-navigation__profile-button">
+            <img
+              class="header-navigation__profile-button-icon"
+              src="./images/icons/account.svg"
+              alt="account"
+            />
+            Особистий кабінет
+          </button>
+        </div>
+      </nav>
+      <ul class="header-navigation__menu-submenu">
+        <li class="header-navigation__menu-submenu-item">
+          <a class="header-navigation__menu-submenu-link">ММР Буст </a>
+        </li>
+        <li class="header-navigation__menu-submenu-item">
+          <a class="header-navigation__menu-submenu-link">Калібровка </a>
+        </li>
+        <li class="header-navigation__menu-submenu-item">
+          <a class="header-navigation__menu-submenu-link">Низький Пріорітет </a>
+        </li>
+        <li class="header-navigation__menu-submenu-item">
+          <a class="header-navigation__menu-submenu-link">Оцінка Поведінки </a>
+        </li>
+        <li class="header-navigation__menu-submenu-item">
+          <a class="header-navigation__menu-submenu-link"
+            >Моніторінг Замовлень
+          </a>
+        </li>
+      </ul>
+    </div>
+    <div class="header-mobile-block">
+      <div class="header-mobile-navigation">
+        <div class="header-mobile-navigation-block">
+          <button class="header-mobile-navigation-avatar">
+            <img
+              class="header-mobile-navigation-avatar-icon"
+              src="./images/avatar-mob.png"
+            />
+          </button>
+          <button class="header-mobile-navigation-logo">
+            <img
+              class="header-mobile-navigation-logo-icon"
+              src="./images/icons/logo-2.svg"
+            />
+          </button>
+          <div class="header-mobile-navigation-nav">
+            <button class="header-mobile-navigation-nav-open">
               <img
-                class="header-navigation__profile-info-image"
-                alt="profile"
-                src="./images/profile-image.png"
+                class="header-mobile-navigation-nav-open-icon"
+                src="./images/icons/menu.svg"
               />
-              <p class="header-navigation__profile-info-name">Marakesh</p>
-              <button class="header-navigation__profile-info-notification">
+            </button>
+            <button class="header-mobile-navigation-nav-report">
+              <img
+                class="header-mobile-navigation-nav-report-icon"
+                src="./images/icons/headset_mic.svg"
+              />
+            </button>
+            <button class="header-mobile-navigation-nav-close">
+              <img
+                class="header-mobile-navigation-nav-close-icon"
+                src="./images/icons/close.svg"
+              />
+            </button>
+          </div>
+        </div>
+        <div class="header-mobile-navigation-down">
+          <div class="header-mobile-navigation-down-account">
+            <div class="header-mobile-navigation-down-account-avatar">
+              <img
+                class="header-mobile-navigation-down-account-avatar-img"
+                src="./images/avatar-mob.png"
+              />
+              <p class="header-mobile-navigation-down-account-avatar-name">
+                Marakesh
+              </p>
+            </div>
+            <div class="header-mobile-navigation-down-account-menu">
+              <button class="header-mobile-navigation-down-account-menu-button">
                 <img
-                  class="header-navigation__profile-info-notification-icon"
-                  alt="profile-icon"
+                  class="header-mobile-navigation-down-account-menu-button-icon"
                   src="./images/icons/notifications.svg"
                 />
               </button>
-            </div>
-
-            <div class="header-navigation__profile-menu-block">
-              <div class="header-navigation__profile-menu">
-                <button class="header-navigation__profile-menu-button">
-                  <img
-                    class="header-navigation__profile-menu-button-icon"
-                    src="./images/icons/account.svg"
-                    alt="icon-menu"
-                  />
-                  Профіль
-                </button>
-                <button class="header-navigation__profile-menu-button">
-                  <img
-                    class="header-navigation__profile-menu-button-icon"
-                    src="./images/icons/settings-profile.svg"
-                    alt="icon-menu"
-                  />
-                  Налаштування
-                </button>
-                <button class="header-navigation__profile-menu-button">
-                  <img
-                    class="header-navigation__profile-menu-button-icon"
-                    src="./images/icons/out-profile.svg"
-                    alt="icon-menu"
-                  />
-                  Вихід
-                </button>
-              </div>
+              <button class="header-mobile-navigation-down-account-menu-button">
+                <img
+                  class="header-mobile-navigation-down-account-menu-button-icon"
+                  src="./images/icons/settings-profile.svg"
+                />
+              </button>
+              <button class="header-mobile-navigation-down-account-menu-button">
+                <img
+                  class="header-mobile-navigation-down-account-menu-button-icon"
+                  src="./images/icons/logout.svg"
+                />
+              </button>
             </div>
           </div>
+          <button class="header-mobile-navigation-down-manager">
+            <div class="header-mobile-navigation-down-manager-avatar">
+              <img
+                class="header-mobile-navigation-down-manager-avatar-icon"
+                src="./images/Manager_Photo.png"
+              />
+              <div class="header-mobile-navigation-down-manager-avatar-text">
+                <p
+                  class="header-mobile-navigation-down-manager-avatar-text-server"
+                >
+                  Менеджер
+                </p>
+                <p
+                  class="header-mobile-navigation-down-manager-avatar-text-name"
+                >
+                  Денис
+                </p>
+              </div>
+            </div>
+
+            <div class="header-mobile-navigation-down-manager-button">
+              <img
+                class="header-mobile-navigation-down-manager-button-icon"
+                src="./images/icons/arrow.svg"
+              />
+            </div>
+          </button>
+          <button class="header-mobile-navigation-down-report">
+            <img
+              class="header-mobile-navigation-down-report-icon"
+              src="./images/icons/headset_mic.svg"
+            />
+            Зв’язок з нами
+          </button>
+          <div class="header-mobile-navigation-down-service">
+            <div class="header-mobile-navigation-down-service-one">
+              <button class="header-mobile-navigation-down-service-one-button">
+                Буст ММР
+              </button>
+              <button class="header-mobile-navigation-down-service-one-button">
+                Калібровка
+              </button>
+              <button class="header-mobile-navigation-down-service-one-button">
+                Буст Порядності
+              </button>
+            </div>
+            <div class="header-mobile-navigation-down-service-second">
+              <button
+                class="header-mobile-navigation-down-service-second-button"
+              >
+                Низький Пріорітет
+              </button>
+              <button
+                class="header-mobile-navigation-down-service-second-button"
+              >
+                Моніторинг Замовлень
+              </button>
+            </div>
+          </div>
+
+          <div class="header-mobile-navigation-down-menu">
+            <button class="header-mobile-navigation-down-menu-button">
+              <img
+                class="header-mobile-navigation-down-menu-button-icon"
+                src="./images/icons/supervised_user_circle.svg"
+              />
+              Про Нас
+            </button>
+            <button class="header-mobile-navigation-down-menu-button">
+              <img
+                class="header-mobile-navigation-down-menu-button-icon"
+                src="./images/icons/work.svg"
+              />
+              Робота
+            </button>
+            <button class="header-mobile-navigation-down-menu-button">
+              <img
+                class="header-mobile-navigation-down-menu-button-icon"
+                src="./images/icons/newsmode.svg"
+              />
+              Блог
+            </button>
+            <button class="header-mobile-navigation-down-menu-button">
+              <img
+                class="header-mobile-navigation-down-menu-button-icon"
+                src="./images/icons/faq.svg"
+              />
+              FAQ
+            </button>
+          </div>
         </div>
-      </nav>
+      </div>
     </div>
   </div>
 </header>

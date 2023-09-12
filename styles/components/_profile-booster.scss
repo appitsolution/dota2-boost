@@ -534,3 +534,219 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .profile-booster {
+        &-block {
+            padding: 0;
+        }
+
+        &-head {
+            &-title {
+                font-size: 52px;
+            }
+            &-path {
+                &-text:first-child {
+                    display: none;
+                }
+                &-decor {
+                    display: none;
+                }
+            }
+        }
+
+        &-info {
+            flex-direction: column;
+            padding: 16px;
+
+            &-block {
+                flex-direction: column;
+            }
+
+            &-avatar {
+                width: 100%;
+
+                &-img {
+                    width: 100%;
+                    height: unset;
+                }
+            }
+
+            &-stats {
+                box-sizing: border-box;
+                padding: 0;
+
+                &-score {
+                    padding: 16px 20px;
+                }
+            }
+        }
+
+        &-review {
+            &-list {
+                flex-direction: column;
+                margin-bottom: 16px;
+            }
+
+            &-item {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            &-pagination {
+                justify-content: center;
+            }
+        }
+
+        &-history {
+            &-flex {
+                flex-direction: column;
+            }
+
+            &-orders {
+                &-title {
+                    text-align: center;
+                }
+            }
+
+            &-matches {
+                &-title {
+                    text-align: center;
+                }
+                &-mobile {
+                    display: flex;
+                    margin: 0 -16px;
+
+                    & .service-boost-tracking-head-item {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 32px;
+                        border-radius: 40px;
+                        background: #181818;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .profile-booster {
+        &-block {
+            padding: 0;
+        }
+
+        &-head {
+            &-title {
+                font-size: 52px;
+            }
+            &-path {
+                &-text:first-child {
+                    display: none;
+                }
+                &-decor {
+                    display: none;
+                }
+            }
+        }
+
+        &-info {
+            flex-direction: column;
+            padding: 8px;
+
+            &-block {
+                flex-direction: column;
+            }
+
+            &-content {
+                &-head {
+                    flex-direction: column-reverse;
+                    align-items: stretch;
+                    gap: 5px;
+
+                    &-like {
+                        justify-content: center;
+                    }
+                }
+            }
+
+            &-avatar {
+                width: 100%;
+
+                &-img {
+                    width: 100%;
+                    height: unset;
+                }
+            }
+
+            &-stats {
+                box-sizing: border-box;
+                padding: 0;
+
+                &-score {
+                    padding: 16px;
+                }
+
+                &-flex:first-child {
+                    flex-direction: column;
+                }
+
+                &-game {
+                    box-sizing: border-box;
+                }
+
+                &-rank {
+                    box-sizing: border-box;
+                }
+            }
+        }
+
+        &-review {
+            &-list {
+                flex-direction: column;
+                margin-bottom: 16px;
+            }
+
+            &-item {
+                width: 100%;
+                box-sizing: border-box;
+            }
+
+            &-pagination {
+                justify-content: center;
+            }
+        }
+
+        &-history {
+            &-flex {
+                flex-direction: column;
+            }
+
+            &-orders {
+                &-title {
+                    text-align: center;
+                }
+            }
+
+            &-matches {
+                &-title {
+                    text-align: center;
+                }
+                &-mobile {
+                    display: flex;
+                    margin: 0 -16px;
+
+                    & .service-boost-tracking-head-item {
+                        display: flex;
+                        flex-direction: column;
+                        padding: 32px;
+                        border-radius: 40px;
+                        background: #181818;
+                        margin-bottom: 24px;
+                    }
+                }
+            }
+        }
+    }
+}

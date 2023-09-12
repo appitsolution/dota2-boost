@@ -380,3 +380,199 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .service-boost {
+        &-head {
+            &-title {
+                font-size: 52px;
+            }
+            &-path {
+            }
+
+            &-titles {
+                flex-direction: column;
+                gap: 32px;
+
+                &-title {
+                    font-size: 52px;
+                }
+
+                &-notification {
+                    &-online {
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+
+        &-second {
+            padding-top: 30px;
+            &-title {
+                font-size: 52px;
+                text-align: center;
+            }
+
+            &-flex {
+                flex-direction: column;
+            }
+        }
+
+        &-more {
+            &-head {
+                &-title {
+                    text-align: center;
+                }
+            }
+            &-list {
+                flex-direction: column;
+            }
+
+            &-item {
+                padding: 24px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-tracking {
+            &-head {
+                flex-direction: column;
+
+                &-line {
+                    display: none;
+                }
+
+                &-item {
+                    text-align: center;
+                    width: unset;
+                }
+
+                &-item:nth-child(3) {
+                    display: none;
+                }
+            }
+
+            &-info {
+                flex-direction: column;
+
+                &-search {
+                    flex-direction: column;
+                    &-activity {
+                        width: 100%;
+
+                        &-active {
+                            width: 50%;
+                        }
+                        &-out {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .service-boost {
+        &-head {
+            &-title {
+                font-size: 52px;
+            }
+            &-path {
+                &-text {
+                    font-size: 24px;
+                }
+            }
+
+            &-titles {
+                flex-direction: column;
+                gap: 32px;
+
+                &-title {
+                    font-size: 40px;
+                }
+
+                &-notification {
+                    &-online {
+                        width: 100%;
+                        box-sizing: border-box;
+                    }
+                }
+            }
+        }
+
+        &-second {
+            padding-top: 30px;
+            &-title {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            &-description {
+                font-size: 18px;
+            }
+
+            &-flex {
+                flex-direction: column;
+            }
+        }
+
+        &-more {
+            &-head {
+                padding: 0 10px;
+                &-title {
+                    text-align: center;
+                }
+            }
+            &-list {
+                flex-direction: column;
+            }
+
+            &-item {
+                padding: 24px;
+                width: 100%;
+                box-sizing: border-box;
+            }
+        }
+
+        &-tracking {
+            &-head {
+                flex-direction: column;
+
+                &-line {
+                    display: none;
+                }
+
+                &-item {
+                    text-align: center;
+                    width: unset;
+                }
+
+                &-item:nth-child(3) {
+                    display: none;
+                }
+            }
+
+            &-info {
+                flex-direction: column;
+
+                &-search {
+                    flex-direction: column;
+                    &-activity {
+                        width: 100%;
+
+                        &-active {
+                            width: 50%;
+                        }
+                        &-out {
+                            width: 50%;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

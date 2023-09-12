@@ -1,7 +1,9 @@
 .blog-hero {
     &-block {
-        background: linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%),
-            url(../images/blog/blog-1.png), lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
+        background:
+            linear-gradient(0deg, rgba(0, 0, 0, 0.34) 0%, rgba(0, 0, 0, 0.34) 100%),
+            url(../images/blog/blog-1.png),
+            lightgray -51.968px -173.375px/104.957% 146.295% no-repeat;
         background-repeat: no-repeat;
         width: 100%;
         background-position: center;
@@ -114,6 +116,57 @@
                 border-radius: 4px;
                 background: #181818;
             }
+        }
+    }
+}
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .blog-hero {
+        &-date {
+            flex-direction: column;
+            gap: 10px;
+            &-text {
+                text-align: center;
+            }
+            &-decor {
+                text-align: center;
+            }
+        }
+
+        &-title {
+            font-size: 36px;
+        }
+
+        &-link {
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog-hero {
+        &-date {
+            flex-direction: column;
+            gap: 10px;
+            &-text {
+                text-align: center;
+            }
+            &-decor {
+                text-align: center;
+            }
+        }
+
+        &-title {
+            font-size: 32px;
+            text-align: center;
+        }
+
+        &-link {
+            width: 100%;
+            justify-content: center;
+            box-sizing: border-box;
         }
     }
 }

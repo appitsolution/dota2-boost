@@ -155,3 +155,54 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .blog {
+        &-header {
+            padding: 0;
+
+            &-title {
+                font-size: 52px;
+            }
+        }
+
+        &-list {
+            gap: 16px;
+        }
+
+        &-item {
+            width: 100%;
+        }
+    }
+
+    .blog-hero {
+        &-title {
+            text-align: center;
+        }
+
+        &-link {
+            padding: 20px 36px;
+            margin: 0 auto;
+            border-radius: 20px;
+            background: rgba(24, 24, 24, 0.6);
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .blog {
+        &-header {
+            padding: 0 10px;
+            &-title {
+                font-size: 40px;
+            }
+        }
+
+        &-list {
+            flex-direction: column;
+        }
+        &-item {
+            width: 100%;
+        }
+    }
+}

@@ -614,3 +614,174 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .work-us {
+        &-hero {
+            &-title {
+                font-size: 52px;
+            }
+        }
+    }
+    .work-us-advantages {
+        &-title {
+            font-size: 36px;
+        }
+
+        &-block {
+            flex-direction: column;
+        }
+        &-you {
+            &-decor {
+                margin-top: auto;
+            }
+            &-content {
+                &-block {
+                    display: flex;
+                    flex-direction: column;
+                    align-items: center;
+                    width: 100%;
+                    box-sizing: border-box;
+                }
+            }
+        }
+        &-our {
+            &-content {
+                flex-wrap: wrap;
+            }
+        }
+    }
+
+    .work-us-order {
+        &-title {
+            font-size: 52px;
+        }
+        &-form {
+            flex-direction: column;
+
+            &-personal {
+                flex-direction: column;
+                flex-wrap: wrap;
+                max-width: unset;
+                gap: 16px;
+
+                &-label {
+                    width: calc(100% - 8px);
+                }
+            }
+
+            &-game {
+                box-sizing: border-box;
+
+                &-block {
+                    flex-wrap: wrap;
+                }
+
+                &-block &-label:nth-child(1) {
+                    width: calc(50% - 10px);
+                }
+
+                &-block &-label:nth-child(2) {
+                    width: calc(50% - 10px);
+                }
+
+                &-block &-label:nth-child(3) {
+                    width: 100%;
+                }
+                &-file {
+                    width: 100%;
+                }
+
+                &-stream {
+                    width: 100%;
+                }
+            }
+        }
+
+        &-submit {
+            flex-direction: column-reverse;
+
+            &-button {
+                justify-content: center;
+                max-width: unset;
+                padding: 24px 20px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .work-us {
+        &-hero {
+            &-title {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            &-second {
+                font-size: 24px;
+                text-align: center;
+            }
+        }
+
+        &-advantages {
+            font-size: 28px;
+            text-align: center;
+
+            &-block {
+                flex-direction: column;
+            }
+
+            &-our {
+                &-content {
+                    flex-direction: column;
+                }
+            }
+        }
+
+        &-order {
+            &-title {
+                font-size: 40px;
+                text-align: center;
+            }
+
+            &-desc {
+                font-size: 18px;
+            }
+
+            &-form {
+                flex-direction: column;
+
+                &-game {
+                    padding: 32px 0;
+
+                    &-block {
+                        flex-direction: column;
+                        align-items: baseline;
+                    }
+
+                    &-label {
+                        width: 100%;
+                    }
+
+                    &-file {
+                        width: 100%;
+                    }
+
+                    &-stream {
+                        width: 100%;
+                    }
+                }
+            }
+
+            &-submit {
+                flex-direction: column-reverse;
+
+                &-button {
+                    padding: 24px 20px;
+                    justify-content: center;
+                }
+            }
+        }
+    }
+}

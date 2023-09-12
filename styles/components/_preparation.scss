@@ -721,3 +721,315 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .preparation {
+        &-instruction {
+            &-item {
+                flex-direction: column;
+
+                &:last-child {
+                    flex-direction: column;
+                }
+
+                &-content {
+                    max-width: unset;
+
+                    &-title {
+                        text-align: center;
+                        font-size: 52px;
+                    }
+
+                    &-second {
+                        text-align: center;
+                    }
+                }
+            }
+        }
+
+        &-details {
+            &-title {
+                text-align: center;
+                font-size: 56px;
+            }
+
+            &-form {
+                flex-direction: column;
+
+                &-block {
+                    max-width: unset;
+                }
+            }
+        }
+
+        &-additional {
+            &-title {
+                text-align: center;
+                font-size: 52px;
+            }
+
+            &-heroes-control {
+                flex-direction: row;
+                gap: 8px;
+
+                &-select {
+                    width: 100%;
+
+                    &-title {
+                        font-size: 22px;
+                    }
+
+                    &-list {
+                        flex-direction: column;
+                    }
+                }
+                &-ban {
+                    width: 100%;
+
+                    &-title {
+                        font-size: 22px;
+                    }
+
+                    &-list {
+                        flex-direction: column;
+                    }
+                }
+            }
+
+            &-heroes-class {
+                flex-direction: column;
+
+                &-power {
+                    width: 100%;
+
+                    &-button {
+                        width: 125px;
+                    }
+                }
+
+                &-agility {
+                    width: 100%;
+
+                    &-button {
+                        width: 125px;
+                    }
+                }
+
+                &-intellect {
+                    width: 100%;
+
+                    &-button {
+                        width: 125px;
+                    }
+                }
+
+                &-versatility {
+                    width: 100%;
+
+                    &-button {
+                        width: 125px;
+                    }
+                }
+            }
+
+            &-submit-button {
+                width: 100%;
+                font-size: 20px;
+                justify-content: center;
+                padding: 25px 40px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .preparation-instruction {
+        &-item {
+            flex-direction: column;
+
+            &:last-child {
+                flex-direction: column-reverse;
+            }
+
+            &-content {
+                &-title {
+                    font-size: 40px;
+                    text-align: center;
+                }
+
+                &-second {
+                    font-size: 24px;
+                    text-align: center;
+                }
+
+                &-desc {
+                    font-size: 18px;
+                    padding: 0 10px;
+                }
+            }
+        }
+    }
+
+    .preparation-details {
+        &-title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &-desc {
+            font-size: 18px;
+            font-weight: 300;
+            text-align: center;
+            padding: 02 0px;
+        }
+
+        &-form {
+            flex-direction: column;
+
+            &-textarea {
+                &-title {
+                    flex-direction: column;
+                    align-items: flex-start;
+                }
+            }
+        }
+    }
+
+    .preparation-additional {
+        padding: 0 10px;
+        &-title {
+            font-size: 40px;
+            text-align: center;
+        }
+
+        &-time {
+            &-list {
+                flex-direction: column;
+            }
+        }
+
+        &-heroes {
+            padding: 24px 8px;
+        }
+
+        &-heroes-control {
+            flex-direction: row;
+            gap: 8px;
+
+            &-select {
+                width: 100%;
+
+                &-title {
+                    text-align: center;
+                    font-size: 20px;
+                }
+                &-list {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px;
+                }
+
+                &-button {
+                    &-image {
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+            }
+            &-ban {
+                width: 100%;
+
+                &-title {
+                    text-align: center;
+                    font-size: 20px;
+                }
+
+                &-list {
+                    display: flex;
+                    flex-direction: column;
+                    padding: 8px;
+                }
+
+                &-button {
+                    &-image {
+                        max-width: unset;
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+        &-heroes-class {
+            flex-direction: column;
+
+            &-power {
+                width: 100%;
+
+                &-list {
+                    gap: 8px;
+                }
+                &-button {
+                    width: calc((100% - 8px) / 2);
+
+                    &-icon {
+                        max-width: unset;
+                    }
+                }
+            }
+
+            &-agility {
+                width: 100%;
+
+                &-list {
+                    gap: 8px;
+                }
+                &-button {
+                    width: calc((100% - 8px) / 2);
+
+                    &-icon {
+                        max-width: unset;
+                    }
+                }
+            }
+
+            &-intellect {
+                width: 100%;
+
+                &-list {
+                    gap: 8px;
+                }
+                &-button {
+                    width: calc((100% - 8px) / 2);
+
+                    &-icon {
+                        max-width: unset;
+                    }
+                }
+            }
+
+            &-versatility {
+                width: 100%;
+
+                &-list {
+                    gap: 8px;
+                }
+                &-button {
+                    width: calc((100% - 8px) / 2);
+
+                    &-icon {
+                        max-width: unset;
+                    }
+                }
+            }
+        }
+
+        &-submit {
+            &-button {
+                padding: 20px 13px;
+                font-size: 20px;
+                width: 100%;
+                justify-content: center;
+            }
+        }
+    }
+}

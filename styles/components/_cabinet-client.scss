@@ -1287,3 +1287,306 @@
         }
     }
 }
+
+@media screen and (min-width: 420px) and (max-width: 768px) {
+    .cabinet-back {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .cabinet-control {
+        flex-direction: column;
+        gap: 30px;
+
+        &__info {
+            width: 100%;
+        }
+
+        &__navigation {
+            width: 100%;
+
+            &-button {
+                padding: 30px;
+            }
+        }
+    }
+
+    .cabinet-information {
+        flex-direction: column;
+        gap: 64px;
+
+        &__order {
+            width: 100%;
+
+            &-info {
+                &-work {
+                    gap: 8px;
+                    flex-wrap: wrap;
+                    padding: 8px;
+
+                    &-id {
+                        width: calc(50% - 20px);
+                    }
+
+                    &-date {
+                        width: calc(50% - 20px);
+                        margin-left: 0;
+                    }
+
+                    &-percent {
+                        max-width: unset;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        &__history {
+            width: 100%;
+
+            &-info {
+                padding: 8px;
+                flex-wrap: wrap;
+
+                &-status {
+                    margin-top: 5px;
+                    width: 100%;
+
+                    &-value {
+                        margin: 0 auto;
+                    }
+                }
+            }
+        }
+    }
+
+    .cabinet-client-settings {
+        &-block {
+            flex-direction: column;
+        }
+
+        &-nav {
+            flex-direction: column;
+            max-width: unset;
+            box-sizing: border-box;
+        }
+
+        &-account {
+            width: 100%;
+            height: unset;
+
+            &-label {
+                width: 100%;
+            }
+
+            &-wrapper {
+                padding-left: 0;
+                flex-direction: column;
+            }
+
+            &-button {
+                &-bot {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &-notification {
+            height: unset;
+            &-wrapper {
+                padding-left: 0;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 420px) {
+    .cabinet-back {
+        width: 100%;
+        box-sizing: border-box;
+        font-size: 24px;
+    }
+
+    .cabinet-control {
+        flex-direction: column;
+        gap: 30px;
+
+        &__info {
+            width: 100%;
+        }
+
+        &__navigation {
+            width: 100%;
+
+            &-button {
+                padding: 30px;
+                width: calc(100% / 2);
+            }
+        }
+    }
+
+    .cabinet-information {
+        flex-direction: column;
+        gap: 64px;
+
+        &__order {
+            width: 100%;
+
+            &-show {
+                &-work {
+                    &-block {
+                        flex-direction: column;
+                        gap: 10px;
+                    }
+
+                    &-server {
+                        flex-wrap: wrap;
+                    }
+
+                    &-content {
+                        &-navigation {
+                            &-button {
+                                width: 50%;
+                            }
+                        }
+                    }
+                }
+            }
+
+            &-info {
+                flex-wrap: wrap;
+                gap: 5px;
+
+                &-id {
+                    width: calc(100% - 85px);
+                }
+
+                &-date {
+                    margin-left: 0;
+                    width: 100%;
+                }
+                &-work {
+                    gap: 8px;
+                    flex-direction: column;
+                    padding: 8px 16px;
+
+                    &-id {
+                        width: 100%;
+
+                        &-value {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    &-date {
+                        width: 100%;
+                        margin-left: 0;
+                        &-value {
+                            margin: 0 auto;
+                        }
+                    }
+
+                    &-percent {
+                        max-width: unset;
+                        margin-left: 0;
+                    }
+                }
+            }
+        }
+
+        &__history {
+            width: 100%;
+
+            &-info {
+                padding: 8px;
+                flex-wrap: wrap;
+                align-items: flex-start;
+                gap: 5px;
+
+                &-status {
+                    margin-top: 5px;
+                    width: 100%;
+
+                    &-value {
+                        margin: 0 auto;
+                    }
+                }
+
+                &-id {
+                    width: calc(100% - 75px);
+                }
+                &-date {
+                    width: 100%;
+                }
+            }
+        }
+    }
+
+    .cabinet-client-settings {
+        &-block {
+            flex-direction: column;
+        }
+
+        &-nav {
+            flex-direction: column;
+            max-width: unset;
+            box-sizing: border-box;
+        }
+
+        &-account {
+            width: 100%;
+            height: unset;
+
+            &-title {
+                justify-content: center;
+                margin: 20px 0;
+
+                &::before {
+                    content: "";
+                    width: 75%;
+                    height: 2px;
+                    background: #3c3c3c;
+                    border-radius: 5px;
+                }
+            }
+
+            &-label {
+                width: 100%;
+            }
+
+            &-wrapper {
+                padding-left: 0;
+                flex-direction: column;
+                padding: 0 5px;
+            }
+
+            &-button {
+                &-bot {
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
+        }
+
+        &-notification {
+            height: unset;
+            &-wrapper {
+                padding-left: 0;
+            }
+
+            &-title {
+                justify-content: center;
+                margin: 20px 0;
+
+                &::before {
+                    content: "";
+                    width: 75%;
+                    height: 2px;
+                    background: #3c3c3c;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}
